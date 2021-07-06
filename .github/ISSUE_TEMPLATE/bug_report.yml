@@ -5,18 +5,18 @@ labels: [Type: Bug, Status: Triage]
 assignees:
   - MeerMusik
 body:
-  - type: markdown
+- type: checkboxes
+  attributes:
+    label: Is there an existing issue for this?
+    description: Please search to see if an issue already exists for the bug you encountered.
+    options:
+    - label: I have searched the existing issues
+      required: true
+- type: markdown
     attributes:
       value: |
        Thanks for taking the time to fill out this Bug Report!
-  - type: checkboxes
-    attributes:
-      label: Is there an existing issue for this?
-      description: Please search to see if an issue already exists for the bug you encountered.
-  options:
-  - label: I have searched the existing issues
-    required: true
-  - type: textarea
+- type: textarea
     id: bug-description
     attributes:
       label: Describe the Bug ?
@@ -25,7 +25,7 @@ body:
       value: "A bug happened!"
     validations:
       required: true
-  - type: dropdown
+- type: dropdown
     id: operating_system
     attributes:
       label: What Operating System?
@@ -40,7 +40,7 @@ body:
         - Windows 8.1
         - Windows 10
         - Other (not supported)
-  validations:
+validations:
     required: true
   - type: dropdown
     id: os_bitness
