@@ -9,6 +9,7 @@ body:
   attributes:
   value: |
    Thanks for taking the time to fill out this Bug Report!
+body:
 - type: checkboxes
   attributes:
   label: Is there an existing issue for this?
