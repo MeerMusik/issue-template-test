@@ -19,29 +19,29 @@ body:
 - type: textarea
   id: bug-description
   attributes:
-  label: Describe the Bug ?
-  description: Also tell us, what did you expect to happen?
-  placeholder: Tell us what you see!
-  value: "A bug happened!"
-  validations:
-  required: true
+    label: Describe the Bug ?
+    description: Also tell us, what did you expect to happen?
+    placeholder: Tell us what you see!
+    value: "A bug happened!"
+    validations:
+    required: true
 - type: dropdown
   id: operating_system
   attributes:
-  label: What Operating System?
-  multiple: true
-  options:
-  - BSD (supported by Ultimate++ but not tested)
-  - Linux with KDE Version 5 (supported and tested)
-  - Linux with GNOME Version 3 (supported but untested at the moment)
-  - Linux other (support depends on used Distribution; usually not tested)
-  - macOS (supported by Ultimate++ but not tested)
-  - Windows 7
-  - Windows 8.1
-  - Windows 10
-  - Other (not supported)
-  validations:
-  required: true
+    label: What Operating System?
+    multiple: true
+    options:
+    - BSD (supported by Ultimate++ but not tested)
+    - Linux with KDE Version 5 (supported and tested)
+    - Linux with GNOME Version 3 (supported but untested at the moment)
+    - Linux other (support depends on used Distribution; usually not tested)
+    - macOS (supported by Ultimate++ but not tested)
+    - Windows 7
+    - Windows 8.1
+    - Windows 10
+    - Other (not supported)
+   validations:
+   required: true
 - type: dropdown
   id: os_bitness
   attributes:
