@@ -1,6 +1,6 @@
 name: Bug Report
 description: File a Bug Report
-title: "[Type: Bug]: "
+title: "[Bug]: "
 labels: [Type: Bug, Status: Triage]
 assignees:
   - MeerMusik
