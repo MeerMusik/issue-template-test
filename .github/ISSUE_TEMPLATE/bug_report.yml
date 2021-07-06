@@ -40,8 +40,8 @@ body:
     - Windows 8.1
     - Windows 10
     - Other (not supported)
- validations:
-   required: true
+  validations:
+    required: true
 - type: dropdown
   id: os_bitness
   attributes:
