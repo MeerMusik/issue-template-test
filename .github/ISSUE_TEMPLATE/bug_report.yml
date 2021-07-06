@@ -45,19 +45,19 @@ body:
 - type: dropdown
   id: os_bitness
   attributes:
-  label: Bitness Operating System
-  description: What bitness is your Operating System?
-  options:
-  - X86_64 (64-Bit)
-  - X86 (32-Bit)
-  validations:
-  required: true
+    label: Bitness Operating System
+    description: What bitness is your Operating System?
+    options:
+    - X86 (32-Bit)
+    - X86_64 (64-Bit)
+    validations:
+    required: true
 - type: textarea
   id: logs
   attributes:
-  label: Relevant log output
-  description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-  render: shell
+    label: Relevant log output
+    description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+    render: shell
 - type: checkboxes
   id: code-of-conduct
   attributes:
