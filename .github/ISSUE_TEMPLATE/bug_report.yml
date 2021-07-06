@@ -1,22 +1,14 @@
 name: Bug Report
 description: File a bug report
-title: "[Bug]: "
-labels: [bug, triage]
+title: "[Type: Bug]: "
+labels: [Type: Bug, Status: Triage]
 assignees:
-  - octocat
+  - MeerMusik
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
   - type: textarea
     id: what-happened
     attributes:
@@ -27,25 +19,32 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
+    id: operating_system
     attributes:
       label: What browsers are you seeing the problem on?
       multiple: true
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+        - BSD (supported by Ultimate++ but not tested)
+        - Linux with KDE Version 5 (supported and tested)
+        - Linux with GNOME Version 3 (supported but untested at the moment)
+        - Linux other (support depends on used Distribution; usually not tested)
+        - macOS (supported by Ultimate++ but not tested)
+        - Windows 7
+        - Windows 8.1
+        - Windows 10
+        - Other (not supported)
+  validations:
+    required: true
+  - type: dropdown
+    id: os_bitness
+    attributes:
+      label: Bitness Operating System
+      description: What bitness is your Operating System?
+      options:
+        - X86_64 (64-Bit)
+        - X86 (32-Bit)
+    validations:
+      required: true
   - type: textarea
     id: logs
     attributes:
