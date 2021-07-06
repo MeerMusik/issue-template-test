@@ -23,7 +23,7 @@ body:
     description: Also tell us, what did you expect to happen?
     placeholder: Tell us what you see!
     value: "A bug happened!"
-    validations:
+  validations:
     required: true
 - type: dropdown
   id: operating_system
@@ -40,7 +40,7 @@ body:
     - Windows 8.1
     - Windows 10
     - Other (not supported)
-   validations:
+ validations:
    required: true
 - type: dropdown
   id: os_bitness
@@ -50,7 +50,7 @@ body:
     options:
     - X86 (32-Bit)
     - X86_64 (64-Bit)
-    validations:
+  validations:
     required: true
 - type: textarea
   id: logs
