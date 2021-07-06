@@ -52,6 +52,7 @@ body:
     options:
     - X86 (32-Bit)
     - X86_64 (64-Bit)
+    - ONLY IF LINUX - 64-Bit with 32-Bit Multilibs / Layer etc.
   validations:
     required: true
 - type: dropdown
