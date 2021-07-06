@@ -5,6 +5,10 @@ labels: [Type: Bug, Status: Triage]
 assignees:
   - MeerMusik
 body:
+- type: markdown
+    attributes:
+      value: |
+       Thanks for taking the time to fill out this Bug Report!
 - type: checkboxes
   attributes:
     label: Is there an existing issue for this?
@@ -12,18 +16,14 @@ body:
     options:
     - label: I have searched the existing issues
       required: true
-- type: markdown
-    attributes:
-      value: |
-       Thanks for taking the time to fill out this Bug Report!
 - type: textarea
     id: bug-description
     attributes:
-      label: Describe the Bug ?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
-    validations:
+    label: Describe the Bug ?
+    description: Also tell us, what did you expect to happen?
+    placeholder: Tell us what you see!
+    value: "A bug happened!"
+validations:
       required: true
 - type: dropdown
     id: operating_system
