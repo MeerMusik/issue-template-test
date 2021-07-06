@@ -1,7 +1,7 @@
 name: Bug Report
 description: File a Bug Report
-title: "[Type: Bug]: "
-labels: [Type Bug, Status Triage]
+title: "[Bug]: "
+labels: [New Bug]
 assignees:
   - MeerMusik
 body:
@@ -11,11 +11,12 @@ body:
       Thanks for taking the time to fill out this Bug Report!
 - type: checkboxes
   attributes:
-    label: Is there an existing issue for this?
-    description: Please search to see if an issue already exists for the bug you encountered.
+    label: Is there an existing Issue for this Bug?
+    description: Please search to see if an Issue already exists for the Bug you encountered.
     options:
-    - label: I have searched the existing issues
-      required: true
+    - label: I have searched the existing Issues
+  validations:
+    required: true
 - type: textarea
   id: bug-description
   attributes:
@@ -26,26 +27,26 @@ body:
   validations:
     required: true
 - type: dropdown
-  id: os_name
+  id: os-name
   attributes:
     label: What Operating System?
     multiple: true
     options:
-    - BSD (supported by Ultimate++ but not tested)
+    - BSD (supported by Ultimate++ but not tested by me)
     - Linux with KDE Version 5 (supported and tested)
-    - Linux with GNOME Version 3 (supported but untested at the moment)
-    - Linux other (support depends on used Distribution; usually not tested)
-    - macOS (supported by Ultimate++ but not tested)
-    - Windows 7
-    - Windows 8.1
-    - Windows 10
+    - Linux with GNOME Version 3 (supported but untested at the moment by me)
+    - Linux other (support depends on used Distribution; usually not tested by me)
+    - macOS (supported by Ultimate++ but not tested by me)
+    - Windows 7 (supported; tested in a VM)
+    - Windows 8.1 (supported but not tested by me)
+    - Windows 10 (supported and tested)
     - Other (not supported)
   validations:
     required: true
 - type: dropdown
-  id: os_bitness
+  id: os-bitness
   attributes:
-    label: Bitness Operating System
+    label: Architecture Operating System
     description: Which Architecture is your Operating System?
     multiple: true
     options:
@@ -56,12 +57,23 @@ body:
 - type: dropdown
   id: tool_bitness
   attributes:
-    label: Architecture / Bitness of the used Tool
+    label: Architecture / Bitness of the Tool
     description: Which Architecture of the Tool do you use?
     multiple: true
     options:
     - X86 (32-Bit)
     - X86_64 (64-Bit)
+  validations:
+    required: true
+- type: dropdown
+  id: bug_appears_under_which_architecture
+  attributes:
+    label: Under which Architecture does the Bug happen?
+    description: Does the Bug only happen under one or multiple Archtectures?
+    options:
+    - X86 (32-Bit)
+    - X86_64 (64-Bit)
+    - X86 AND X86_64
   validations:
     required: true
 - type: textarea
@@ -74,7 +86,7 @@ body:
   id: code-of-conduct
   attributes:
     label: Code of Conduct
-    description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+    description: By submitting this issue, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md)
     options:
     - label: I agree to follow this project's Code of Conduct
       required: true
