@@ -28,37 +28,37 @@ body:
 - type: dropdown
   id: operating_system
   attributes:
-    label: What Operating System?
-    multiple: true
-    options:
-    - BSD (supported by Ultimate++ but not tested)
-    - Linux with KDE Version 5 (supported and tested)
-    - Linux with GNOME Version 3 (supported but untested at the moment)
-    - Linux other (support depends on used Distribution; usually not tested)
-    - macOS (supported by Ultimate++ but not tested)
-    - Windows 7
-    - Windows 8.1
-    - Windows 10
-    - Other (not supported)
-validations:
-    required: true
-  - type: dropdown
-    id: os_bitness
-    attributes:
-      label: Bitness Operating System
-      description: What bitness is your Operating System?
-      options:
-        - X86_64 (64-Bit)
-        - X86 (32-Bit)
-    validations:
-      required: true
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
+  label: What Operating System?
+  multiple: true
+  options:
+  - BSD (supported by Ultimate++ but not tested)
+  - Linux with KDE Version 5 (supported and tested)
+  - Linux with GNOME Version 3 (supported but untested at the moment)
+  - Linux other (support depends on used Distribution; usually not tested)
+  - macOS (supported by Ultimate++ but not tested)
+  - Windows 7
+  - Windows 8.1
+  - Windows 10
+  - Other (not supported)
+  validations:
+  required: true
+- type: dropdown
+  id: os_bitness
+  attributes:
+  label: Bitness Operating System
+  description: What bitness is your Operating System?
+  options:
+  - X86_64 (64-Bit)
+  - X86 (32-Bit)
+  validations:
+  required: true
+- type: textarea
+  id: logs
+  attributes:
+  label: Relevant log output
+  description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+  render: shell
+- type: checkboxes
     id: terms
     attributes:
       label: Code of Conduct
