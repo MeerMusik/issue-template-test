@@ -1,7 +1,7 @@
 name: Bug Report
 description: File a Bug Report
-title: "[Bug]: "
-labels: [Type: Bug, Status: Triage]
+title: "[Type: Bug]: "
+labels: [Type Bug, Status Triage]
 assignees:
   - MeerMusik
 body:
@@ -46,7 +46,19 @@ body:
   id: os_bitness
   attributes:
     label: Bitness Operating System
-    description: What bitness is your Operating System?
+    description: Which Architecture is your Operating System?
+    multiple: true
+    options:
+    - X86 (32-Bit)
+    - X86_64 (64-Bit)
+  validations:
+    required: true
+- type: dropdown
+  id: tool_bitness
+  attributes:
+    label: Architecture / Bitness of the used Tool
+    description: Which Architecture of the Tool do you use?
+    multiple: true
     options:
     - X86 (32-Bit)
     - X86_64 (64-Bit)
