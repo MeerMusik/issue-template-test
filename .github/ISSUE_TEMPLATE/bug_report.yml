@@ -1,35 +1,35 @@
 name: Bug Report
 description: File a Bug Report
 title: "[Bug]: "
-labels: [New Bug]
+labels: [New Bug, Not Confirmed]
 assignees:
   - MeerMusik
 body:
 - type: markdown
   attributes:
     value: |
-      Thanks for taking the time to fill out this Bug Report!
+      Thank you filling out the Bug Report!
 - type: checkboxes
   attributes:
-    label: Is there an existing Issue for this Bug?
-    description: Please search to see if an Issue already exists for the Bug you encountered.
+    label: Does an Issue already exist for this Bug?
+    description: Please search through the Issues to see if an Issue already exists for the Bug you have encountered!
     options:
-    - label: I have searched the existing Issues
+    - label: I have searched the existing Issues. There is no Issue for this specific Bug
   validations:
     required: true
 - type: textarea
   id: bug-description
   attributes:
-    label: Describe the Bug ?
-    description: Also tell us, what did you expect to happen?
-    placeholder: Tell us what you see!
-    value: "A bug happened!"
+    label: Describe the Bug
+    description: Please describe the Bug as clear and concise as possible
+    placeholder: Example: I opened an existing Document but the Editor is empty
+    value: "Example: I opened an existing Document but the Editor is empty"
   validations:
     required: true
 - type: dropdown
   id: os-name
   attributes:
-    label: What Operating System?
+    label: Which Operating System do you use? Multiple Answers possible
     multiple: true
     options:
     - BSD (supported by Ultimate++ but not tested by me)
@@ -43,23 +43,30 @@ body:
     - Other (not supported)
   validations:
     required: true
+- type: input
+  id: name-linux-distribution-desktop-environment
+  attributes:
+    label: Name of the Linux Distribution and used Desktop Environment
+    description: "Please type the Name of the Linux Distribution and the Name of the Desktop Environment. If you are not using Linux, just type the Letters NA"
+  validations:
+    required: true
 - type: dropdown
   id: os-bitness
   attributes:
     label: Architecture Operating System
-    description: Which Architecture is your Operating System?
+    description: Which Architecture is your Operating System? Multiple Answers possible
     multiple: true
     options:
     - X86 (32-Bit)
     - X86_64 (64-Bit)
-    - ONLY IF LINUX - 64-Bit with 32-Bit Multilibs / Layer etc.
+    - ONLY VALID FOR LINUX - 64-Bit with 32-Bit Multilibs / Compatibility Layer etc.
   validations:
     required: true
 - type: dropdown
   id: tool_bitness
   attributes:
     label: Architecture / Bitness of the Tool
-    description: Which Architecture of the Tool do you use?
+    description: Which Architecture of the Tool do you use? Multiple Answers possible
     multiple: true
     options:
     - X86 (32-Bit)
@@ -70,7 +77,7 @@ body:
   id: bug_appears_under_which_architecture
   attributes:
     label: Under which Architecture does the Bug happen?
-    description: Does the Bug only happen under one or multiple Archtectures?
+    description: Does the Bug only happen under one or multiple Archtectures? Only one Answer possible
     options:
     - X86 (32-Bit)
     - X86_64 (64-Bit)
@@ -78,10 +85,10 @@ body:
   validations:
     required: true
 - type: textarea
-  id: logs
+  id: additional_logs
   attributes:
-    label: Relevant log output
-    description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+    label: Relevant Log Output
+    description: Please copy and paste any relevant Log Output. This will be automatically formatted into code, so no need for backticks.
     render: shell
 - type: checkboxes
   id: code-of-conduct
@@ -89,5 +96,5 @@ body:
     label: Code of Conduct
     description: By submitting this issue, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md)
     options:
-    - label: I agree to follow this project's Code of Conduct
+    - label: I agree to follow the Code of Conduct of this Project
       required: true
