@@ -32,24 +32,36 @@ body:
     label: Which Operating System do you use? Multiple Answers possible
     multiple: true
     options:
-    - BSD (supported by Ultimate++ but not tested by me)
-    - Linux with KDE Version 5 (supported and tested)
-    - Linux with GNOME Version 3 (supported but untested at the moment by me)
-    - Linux other (support depends on used Distribution; usually not tested by me)
-    - macOS (supported by Ultimate++ but not tested by me)
-    - Windows 7 (supported; tested in a VM)
-    - Windows 8.1 (supported but not tested by me)
-    - Windows 10 (supported and tested)
+    - BSD
+    - Arch Linux with GNOME Version 3
+    - Arch Linux with KDE Version 5
+    - Manjaro Linux with GNOME Version 3
+    - Manjaro Linux with KDE Version 5
+    - Linux other
+    - macOS
+    - Windows 7
+    - Windows 8.1
+    - Windows 10
     - Other (not supported)
   validations:
     required: true
 - type: input
-  id: name-linux-distribution-desktop-environment
+  id: name-bsd-linux-distribution-desktop-environment
   attributes:
-    label: Name of the Linux Distribution and used Desktop Environment
-    description: "Please type the Name of the Linux Distribution and the Name of the Desktop Environment. If you are not using Linux, just type the Letters NA"
+    label: Name of the BSD Distribution OR Linux Distribution and used Desktop Environment
+    description: "Please type the Name of the BSD Distribution OR Linux Distribution and the Name of the Desktop Environment. If you are not using BSD or Linux, just type the Letters NA"
   validations:
     required: true
+- type: dropdown
+  id: linux-wayland-x11
+  attributes:
+    label: Only when using Linux - Wayland or X11?
+    description: Does the Bug happen under Wayland or X11? Or both? Multiple Answers possible
+    multiple: true
+    options:
+    - Wayland only
+    - X11 only
+    - Wayland and X11
 - type: dropdown
   id: os-bitness
   attributes:
@@ -59,13 +71,13 @@ body:
     options:
     - X86 (32-Bit)
     - X86_64 (64-Bit)
-    - ONLY VALID FOR LINUX - 64-Bit with 32-Bit Multilibs / Compatibility Layer etc.
+    - 64-Bit with 32-Bit Multilibs / Compatibility Layer or something similar.
   validations:
     required: true
 - type: dropdown
   id: tool_bitness
   attributes:
-    label: Architecture / Bitness of the Tool
+    label: Architecture of the Tool
     description: Which Architecture of the Tool do you use? Multiple Answers possible
     multiple: true
     options:
@@ -82,6 +94,19 @@ body:
     - X86 (32-Bit)
     - X86_64 (64-Bit)
     - X86 AND X86_64
+  validations:
+    required: true
+- type: dropdown
+  id: severity-of-the-bug
+  attributes:
+    label: Does the Tool crash?
+    description: When you experience the Bug, does the Tool crash or is it still usable?
+    multiple: true
+    options:
+    - The Tool crashes to Desktop without an Error Message
+    - The Tool crashes to Desktop and shows an Error Message
+    - The Tool does not crash to Desktop and does not show an Error Message
+    - The Tool does not crash to Desktop but shows an Error Message
   validations:
     required: true
 - type: textarea
