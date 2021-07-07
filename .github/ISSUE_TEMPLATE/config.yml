@@ -1,13 +1,16 @@
-# Do not allow Issue without a body text
+# Do not allow creating Issues without a body text
 blank_issues_enabled: false
-# Some Links for direct Contact
+# Some Links that should help getting in Contact, answering Questions etc. to hopefully limit unnecessary Issue
 contact_links:
   - name: Twitter
     url: https://twitter.com/MeerMusik
-    about: My Twitter Account
-  - name: Website
+    about: Ask me a short Question on Twitter. Replies take somewhere between 2 - 48 hours. Remember: Tweets are public and readable by everyone! If you need to send personal Data, send me a Direct Message ("DM")!
+  - name: Website - FAQ (German only)
     url: https://oliverniebuhr.de
-    about: My personal Website
-  - name: reserved placeholder
-    url: reserved placeholder
-    about: reserved placeholder
+    about: FAQ - Should answer the most Questions
+  - name: Website - Manual (German only)
+    url: https://oliverniebuhr.de
+    about: The Manual will be added later after Version 1.0 has been published
+  - name: PLACEHOLDER
+    url: PLACEHOLDER
+    about: PLACEHOLDER
