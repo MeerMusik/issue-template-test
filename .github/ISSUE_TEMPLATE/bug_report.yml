@@ -22,7 +22,7 @@ body:
   attributes:
     label: Describe the Bug
     description: Please describe the Bug as clear and concise as possible
-    placeholder: Example: I opened an existing Document but the Editor is empty
+    placeholder: Example - I opened an existing Document but the Editor is empty
     value: "Example: I opened an existing Document but the Editor is empty"
   validations:
     required: true
