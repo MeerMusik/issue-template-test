@@ -1,0 +1,13 @@
+# Do not allow Issue without a body text
+blank_issues_enabled: false
+# Some Links for direct Contact
+contact_links:
+  - name: Twitter
+    url: https://twitter.com/MeerMusik
+    about: My Twitter Account
+  - name: Website
+    url: https://oliverniebuhr.de
+    about: My personal Website
+  - name: reserved placeholder
+    url: reserved placeholder
+    about: reserved placeholder
