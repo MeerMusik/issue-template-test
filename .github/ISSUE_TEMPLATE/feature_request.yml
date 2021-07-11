@@ -8,14 +8,17 @@ body:
 - type: markdown
   attributes:
     value: |
-      Thank you for taking the time to fill out the Feature Request Form! If you wish to request multiple new Features, please create a new Issue for each Feature!
+      Thank you for taking the time to fill out the Feature Request Form!
+      If you wish to request multiple new Features, please create a new Issue for each Feature!
       If you are unsure what to do, feel free to contact me anytime. I reply as soon as possible.
+      For technical Problems, please use the Bug Report Form.
+      For everything about Translations, please use the Translation Form!
 - type: checkboxes
   attributes:
     label: Does an Issue already exist for this Feature Request?
     description: Please search through the Issues to see if an Issue already exists for the Feature you wish to request!
     options:
-    - label: I have searched the existing Issues. There is no Issue for this specific Feature or Option.
+    - label: I have searched the existing Issues. There is no Issue for this specific Feature or Option
   validations:
     required: true
 - type: textarea
@@ -42,5 +45,5 @@ body:
     label: Code of Conduct
     description: By submitting this issue, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md)
     options:
-    - label: I agree to follow the Code of Conduct of this Project
+    - label: I agree to follow the Code of Conduct of this Project in addition to the Guidelines and Rules of GitHub
       required: true
