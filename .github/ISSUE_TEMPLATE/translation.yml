@@ -1,5 +1,5 @@
 name: Translation - Add a new Translation or fix an existing incomplete Translation
-description: Add a new Language or fix / update an existing Translation. Please use Locales from "https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" - as the ISO is charging ~140 EUR to get Read Access. This Form will be used until I find a better way long-term!
+description: Add a new Language or fix / update an existing Translation. Please use Locales from "https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" - as the ISO is charging ~140 EUR to get Read Access as of July 2021. This Form will be used until I find a better way long-term!
 title: "[Translation]: "
 labels: ['Type: Translation', 'WIP']
 assignees:
@@ -24,17 +24,17 @@ body:
   attributes:
     label: Which Language you wish to add or fix?
     description: What Language you wish to add or fix? Please use the Locales from "https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes"
-    placeholder: Example 1 - Country: English, en_US - Example 2 - English, en_UK - Example 3 - German, de_DE
-    value: "Example 1 - Country: English, en_US - Example 2 - English, en_UK - Example 3 - German, de_DE"
+    placeholder: Example 1 - English (US), en_US - Example 2 - English (UK), en_UK - Example 3 - German Germany, de_DE - Example 4 - German Switzerland, de_CH
+    value: "Example 1 - English (US), en_US - Example 2 - English (UK), en_UK - Example 3 - German Germany, de_DE - Example 4 - German Switzerland, de_CH" 
   validations:
     required: true
 - type: textarea
-  id: new-language-strings
+  id: language-strings
   attributes:
     label: Please add the Translated String here
-    description: Please describe the Usecase as clear and concise as possible
-    placeholder: Example - The Text in the Print Preview is too small and I can not read it
-    value: "Example - The Text in the Print Preview is too small and I can not read it."
+    description: You can use a Table Format or whatever displays Translated Strings Line by Line
+    placeholder: One translated String per Line please! You can use a numbered List to display Strings Line by Line! Sorry for the inconvenience! I am looking for a better Solution long-term!
+    value: "One translated String per Line please! You can use a numbered List to display Strings Line by Line! Sorry for the inconvenience! I am looking for a better Solution long-term!"
   validations:
     required: true
 - type: checkboxes
