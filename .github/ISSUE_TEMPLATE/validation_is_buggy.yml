@@ -1,0 +1,22 @@
+name: VALIDATION IS BROKEN! WHY?
+description: VALIDATION IS BROKEN! WHY?
+title: "[Translation]: WIP: "
+labels: ['Type: Translation', 'WIP']
+assignees:
+  - MeerMusik
+body:
+- type: markdown
+  attributes:
+    value: |
+      DO NOT REMOVE THE 'WIP' LABEL! TRANSLATIONS WILL BE CHECKED MANUALLY!
+      I will remove the 'WIP' Label when I am ready to integrate your changes!
+      Thank you for helping with the Translation of the Tool!
+      Please create a new Issue for each different Language!
+- type: checkboxes
+  attributes:
+    label: Does an open Issue already exist for this Language / Translation?
+    description: Please search through the Issues to see if there is already an open Issue for the Language you wish to add or fix!
+    options:
+    - label: I have searched the existing open Issues. There is no open Issue for this specific Language / Translation
+  validations:
+    required: true
