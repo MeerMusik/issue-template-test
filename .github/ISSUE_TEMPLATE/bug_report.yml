@@ -1,7 +1,7 @@
 name: Bug Report
 description: File a Bug Report
 title: "[Bug]: "
-labels: ['Type: Bug', 'Status: Not Confirmed']
+labels: "['Type: Bug', 'Status: Not Confirmed']"
 assignees:
   - MeerMusik
 body:
