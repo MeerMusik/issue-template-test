@@ -1,0 +1,47 @@
+name: Translation - Add a new Translation or fix an existing incomplete Translation
+description: Add a new Language or fix / update an existing Translation. Please use Locales from "https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" - as the ISO is charging ~140 EUR to get Read Access. This Form will be used until I find a better way long-term!
+title: "[Translation]: "
+labels: ['Type: Translation', 'WIP']
+assignees:
+  - MeerMusik
+body:
+- type: markdown
+  attributes:
+    value: |
+      Thank you for helping with the Translation of the Tool!
+      Please create a new Issue for each different Language!
+      For technical Problems, please use the Bug Report Form!
+- type: checkboxes
+  attributes:
+    label: Does an open Issue already exist for this Language / Translation?
+    description: Please search through the Issues to see if there is already an open Issue for the Language you wish to add or fix!
+    options:
+    - label: I have searched the existing open Issues. There is no open Issue for this specific Language / Translation
+  validations:
+    required: true
+- type: textarea
+  id: new-language
+  attributes:
+    label: Which Language you wish to add or fix?
+    description: What Language you wish to add or fix? Please use the Locales from "https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes"
+    placeholder: Example 1 - Country: English, en_US - Example 2 - English, en_UK - Example 3 - German, de_DE
+    value: "Example 1 - Country: English, en_US - Example 2 - English, en_UK - Example 3 - German, de_DE"
+  validations:
+    required: true
+- type: textarea
+  id: new-language-strings
+  attributes:
+    label: Please add the Translated String here
+    description: Please describe the Usecase as clear and concise as possible
+    placeholder: Example - The Text in the Print Preview is too small and I can not read it
+    value: "Example - The Text in the Print Preview is too small and I can not read it."
+  validations:
+    required: true
+- type: checkboxes
+  id: code-of-conduct
+  attributes:
+    label: Code of Conduct
+    description: By submitting this issue, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md)
+    options:
+    - label: I agree to follow the Code of Conduct of this Project in addition to the Guidelines and Rules of GitHub
+      required: true
