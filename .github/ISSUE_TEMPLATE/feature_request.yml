@@ -1,7 +1,7 @@
 name: Feature Request
 description: Request to add a completely new Feature or a new Option for an existing Feature
 title: "[Feature Request]: "
-labels: [Type: Feature Request]
+labels: ['Type: Feature Request']
 assignees:
   - MeerMusik
 body:
