@@ -1,8 +1,7 @@
 name: Feature Request
 description: | 
-           To wish a completely new Feature or a new Option (or multiple Options) for an existing Feature.
-           If you wish to request multiple new Features, please create a new Issue for each Feature! Otherwise it will get convoluted very quickly.
-           If you are unsure what todo, contact me anytime. I will reply as soon as possible :)
+           To wish a new Feature or a new Option (or multiple Options) for an existing Feature.
+           If you wish to request multiple new Features, please create a new Issue for each Feature!
 title: "[Feature Request]: "
 labels: ['Type: Feature Request']
 assignees:
