@@ -11,110 +11,30 @@ body:
       Thank you filling out the Bug Report!
 - type: checkboxes
   attributes:
-    label: Does an Issue already exist for this Bug?
-    description: Please search through the Issues to see if an Issue already exists for the Bug you have encountered!
+    label: Does an Issue already exist for this Feature Request?
+    description: Please search through the Issues to see if an Issue already exists for the Feature you wish to request!
     options:
-    - label: I have searched the existing Issues. There is no Issue for this specific Bug
+    - label: I have searched the existing Issues. There is no Issue for this specific Feature or Option.
   validations:
     required: true
 - type: textarea
-  id: bug-description
+  id: feature-description
   attributes:
-    label: Describe the Bug
-    description: Please describe the Bug as clear and concise as possible
-    placeholder: Example - I opened an existing Document but the Editor is empty
-    value: "Example: I opened an existing Document but the Editor is empty"
-  validations:
-    required: true
-- type: dropdown
-  id: os-name
-  attributes:
-    label: Which Operating System do you use? Multiple Answers possible
-    multiple: true
-    options:
-    - BSD
-    - Arch Linux with GNOME Version 3
-    - Arch Linux with KDE Version 5
-    - Manjaro Linux with GNOME Version 3
-    - Manjaro Linux with KDE Version 5
-    - Linux other
-    - macOS
-    - Windows 7
-    - Windows 8.1
-    - Windows 10
-    - Other (not supported)
-  validations:
-    required: true
-- type: input
-  id: name-bsd-linux-distribution-desktop-environment
-  attributes:
-    label: Name of the BSD Distribution OR Linux Distribution and used Desktop Environment
-    description: "Please type the Name of the BSD Distribution OR Linux Distribution and the Name of the Desktop Environment. If you are not using BSD or Linux, just type the Letters NA"
-  validations:
-    required: true
-- type: dropdown
-  id: linux-wayland-x11
-  attributes:
-    label: Only when using Linux - Wayland or X11?
-    description: Does the Bug happen under Wayland or X11? Or both? Multiple Answers possible
-    multiple: true
-    options:
-    - Wayland only
-    - X11 only
-    - Wayland and X11
-- type: dropdown
-  id: os-bitness
-  attributes:
-    label: Architecture Operating System
-    description: Which Architecture is your Operating System? Multiple Answers possible
-    multiple: true
-    options:
-    - X86 (32-Bit)
-    - X86_64 (64-Bit)
-    - 64-Bit with 32-Bit Multilibs / Compatibility Layer or something similar.
-  validations:
-    required: true
-- type: dropdown
-  id: tool_bitness
-  attributes:
-    label: Architecture of the Tool
-    description: Which Architecture of the Tool do you use? Multiple Answers possible
-    multiple: true
-    options:
-    - X86 (32-Bit)
-    - X86_64 (64-Bit)
-  validations:
-    required: true
-- type: dropdown
-  id: bug_appears_under_which_architecture
-  attributes:
-    label: Under which Architecture does the Bug happen?
-    description: Does the Bug only happen under one or multiple Archtectures? Only one Answer possible
-    options:
-    - X86 (32-Bit)
-    - X86_64 (64-Bit)
-    - X86 AND X86_64
-  validations:
-    required: true
-- type: dropdown
-  id: severity-of-the-bug
-  attributes:
-    label: Does the Tool crash?
-    description: When you experience the Bug, does the Tool crash or is it still usable?
-    multiple: true
-    options:
-    - The Tool crashes to Desktop without an Error Message
-    - The Tool crashes to Desktop and shows an Error Message
-    - The Tool does not crash to Desktop and does not show an Error Message
-    - The Tool does not crash to Desktop but shows an Error Message
+    label: Describe the Feature
+    description: Please describe the Feature or Option as clear and concise as possible
+    placeholder: Example - When I open the Print Preview, I want to change the Fontsize.
+    value: "Example - When I open the Print Preview, I want to change the Fontsize."
   validations:
     required: true
 - type: textarea
-  id: additional_logs
+  id: feature-description
   attributes:
-    label: Relevant Log Output
-    description: Please copy and paste any relevant Log Output. This will be automatically formatted into code, so no need for backticks.
-    render: shell
+    label: Describe the Use case
+    description: Please describe the Use case as clear and concise as possible
+    placeholder: Example - The Text in the Print Preview is too small and I can not read it
+    value: "Example - The Text in the Print Preview is too small and I can not read it."
+  validations:
+    required: true
 - type: checkboxes
   id: code-of-conduct
   attributes:
