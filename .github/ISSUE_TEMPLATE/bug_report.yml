@@ -1,5 +1,5 @@
 name: Bug Report - Create a new Issue
-description: "File a Bug Report. When to use: Something does not work at all. Something does only work partially. The App crashes. The App does not launch. If you would like to wish a Feature or Option, please use the "Feature Request" Form!"
+description: File a Bug Report. When to use: Something does not work at all. Something does only work partially. The App crashes. The App does not launch. If you would like to wish a Feature or Option, please use the 'Feature Request' Form!
 title: "[Bug]: "
 labels: ['Type: Bug', 'Status: Not Confirmed']
 assignees:
