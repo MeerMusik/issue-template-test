@@ -1,5 +1,5 @@
 name: Bug Report - Create a new Issue
-description: Something does not work at all. Something does only work partially. The App crashes. The App does not launch. If you would like to wish a Feature or Option, please use the "Feature Request" Form!
+description: Something does not work at all. Something does only work partially. The App crashes. The App does not launch. - If you would like to wish a Feature or Option, please use the "Feature Request" Form!
 title: "[Bug]: "
 labels: ['Type: Bug', 'Status: Not Confirmed']
 assignees:
@@ -9,6 +9,8 @@ body:
   attributes:
     value: |
       Thank you filling out the Bug Report!
+      If you wish to request a new Feature or Option, please use the Feature Request Form!
+      For everything about missing or incomplete Translations, please use Translation Form!
 - type: checkboxes
   attributes:
     label: Does an Issue already exist for this Bug?
@@ -71,7 +73,7 @@ body:
     options:
     - X86 (32-Bit)
     - X86_64 (64-Bit)
-    - 64-Bit with 32-Bit Multilibs / Compatibility Layer or something similar.
+    - 64-Bit with 32-Bit Multilibs / Compatibility Layer or something similar
   validations:
     required: true
 - type: dropdown
@@ -86,27 +88,16 @@ body:
   validations:
     required: true
 - type: dropdown
-  id: bug_appears_under_which_architecture
-  attributes:
-    label: Under which Architecture does the Bug happen?
-    description: Does the Bug only happen under one or multiple Archtectures? Only one Answer possible
-    options:
-    - X86 (32-Bit)
-    - X86_64 (64-Bit)
-    - X86 AND X86_64
-  validations:
-    required: true
-- type: dropdown
   id: severity-of-the-bug
   attributes:
-    label: Does the Tool crash?
-    description: When you experience the Bug, does the Tool crash or is it still usable?
-    multiple: true
+    label: Does the Tool crash to Desktop or become unresponsive?
+    description: When you experience the Bug, does the Tool crash or is it still usable? Does it become unresponsive?
+    multiple: false
     options:
-    - The Tool crashes to Desktop without an Error Message
-    - The Tool crashes to Desktop and shows an Error Message
-    - The Tool does not crash to Desktop and does not show an Error Message
-    - The Tool does not crash to Desktop but shows an Error Message
+    - The Tool crashes to Desktop (CTD)
+    - The Tool does NOT crash to Desktop and is still usable
+    - The Tool does not crash to Desktop but becomes unresponsive and must be terminated through the Task Manager
+    - Answer does not apply - The Tool does not launch (FIXME - IFELSE NEED GH API)
   validations:
     required: true
 - type: textarea
@@ -121,5 +112,5 @@ body:
     label: Code of Conduct
     description: By submitting this issue, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md)
     options:
-    - label: I agree to follow the Code of Conduct of this Project
+    - label: I agree to follow the Code of Conduct of this Project in addition to the Guidelines and Rules of GitHub
       required: true
