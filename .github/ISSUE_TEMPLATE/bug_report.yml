@@ -17,8 +17,7 @@ body:
     description: Please search through the Issues to see if an Issue already exists for the Bug you have encountered!
     options:
     - label: I have searched the existing Issues. There is no Issue for this specific Bug
-  validations:
-    required: true
+      required: true
 - type: textarea
   id: bug-description
   attributes:
