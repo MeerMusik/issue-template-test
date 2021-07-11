@@ -19,8 +19,7 @@ body:
     description: Please search through the Issues to see if an Issue already exists for the Feature you wish to request!
     options:
     - label: I have searched the existing Issues. There is no Issue for this specific Feature or Option
-  validations:
-    required: true
+      required: true
 - type: textarea
   id: new-feature-description
   attributes:
