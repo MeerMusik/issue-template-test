@@ -14,9 +14,9 @@ body:
       Please create a new Issue for each different Language!
 - type: checkboxes
   attributes:
-    label: Does an open Issue already exist for this Language / Translation?
+    label: Does an open Issue already exist for this Translation?
     description: Please search through the Issues to see if there is already an open Issue for the Language you wish to add or fix!
     options:
-    - label: I have searched the existing open Issues. There is no open Issue for this specific Language / Translation
+    - label: I have searched the existing open Issues. There is no open Issue for this specific Translation
   validations:
     required: true
