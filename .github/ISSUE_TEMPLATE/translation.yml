@@ -8,11 +8,13 @@ body:
 - type: markdown
   attributes:
     value: |
-      Thank you for helping with the Translation of the Tool!
-      Please create a new Issue for each different Language!
-      For technical Problems, please use the Bug Report Form!\n\n
       DO NOT REMOVE THE 'WIP' LABEL! TRANSLATIONS WILL BE CHECKED MANUALLY!
       I will remove the 'WIP' Label when your is ready to be merged!
+      
+      Thank you for helping with the Translation of the Tool!
+      Please create a new Issue for each different Language!
+      For technical Problems, please use the Bug Report Form!
+      DO NOT REMOVE THE 'WIP' LABEL! TRANSLATIONS WILL BE CHECKED MANUALLY!
 - type: checkboxes
   attributes:
     label: Does an open Issue already exist for this Language / Translation?
