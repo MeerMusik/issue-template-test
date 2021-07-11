@@ -8,7 +8,7 @@ body:
 - type: markdown
   attributes:
     value: |
-      Thank you filling out the Bug Report!
+      Thak you for taking the time to fill out the Feature Request Form!
 - type: checkboxes
   attributes:
     label: Does an Issue already exist for this Feature Request?
@@ -27,7 +27,7 @@ body:
   validations:
     required: true
 - type: textarea
-  id: feature-description
+  id: feature-usecase
   attributes:
     label: Describe the Use case
     description: Please describe the Use case as clear and concise as possible
