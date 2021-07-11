@@ -1,5 +1,5 @@
 name: Translation - Add a new Translation or fix an existing incomplete Translation
-description: Add a new Language or fix an existing Translation. Please use Locales from "https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" - as the ISO is charging Money for Read Access as of July 2021.
+description: Add a new Language or fix an existing Translation. Please use Locales from https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes - as the ISO is charging Money for Read Access as of July 2021.
 title: "[Translation]: "
 labels: ['Type: Translation', 'WIP']
 assignees:
