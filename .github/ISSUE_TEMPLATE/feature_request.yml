@@ -1,5 +1,5 @@
 name: Feature Request
-description: To wish a new Feature or a new Option (or multiple Options) for an existing Feature.  If you wish to request multiple new Features, please create a new Issue for each Feature!
+description: To wish a new Feature or a new Option (or multiple Options) for an existing Feature. - If you wish to request multiple new Features, please create a new Issue for each Feature!
 title: "[Feature Request]: "
 labels: ['Type: Feature Request']
 assignees:
