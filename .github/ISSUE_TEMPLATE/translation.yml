@@ -9,12 +9,10 @@ body:
   attributes:
     value: |
       DO NOT REMOVE THE 'WIP' LABEL! TRANSLATIONS WILL BE CHECKED MANUALLY!
-      I will remove the 'WIP' Label when your is ready to be merged!
+      I will remove the 'WIP' Label when I am ready to integrate your changes!
       
       Thank you for helping with the Translation of the Tool!
       Please create a new Issue for each different Language!
-      For technical Problems, please use the Bug Report Form!
-      DO NOT REMOVE THE 'WIP' LABEL! TRANSLATIONS WILL BE CHECKED MANUALLY!
 - type: checkboxes
   attributes:
     label: Does an open Issue already exist for this Language / Translation?
