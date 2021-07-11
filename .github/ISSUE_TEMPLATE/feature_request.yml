@@ -1,7 +1,5 @@
 name: Feature Request
-description: | 
-           To wish a new Feature or a new Option (or multiple Options) for an existing Feature.
-           If you wish to request multiple new Features, please create a new Issue for each Feature!
+description: To wish a new Feature or a new Option (or multiple Options) for an existing Feature. If you wish to request multiple new Features, please create a new Issue for each Feature!
 title: "[Feature Request]: "
 labels: ['Type: Feature Request']
 assignees:
@@ -10,7 +8,8 @@ body:
 - type: markdown
   attributes:
     value: |
-      Thank you for taking the time to fill out the Feature Request Form!
+      Thank you for taking the time to fill out the Feature Request Form! If you wish to request multiple new Features, please create a new Issue for each Feature!
+      If you are unsure what to do, feel free to contact me anytime. I reply as soon as possible.
 - type: checkboxes
   attributes:
     label: Does an Issue already exist for this Feature Request?
@@ -20,19 +19,19 @@ body:
   validations:
     required: true
 - type: textarea
-  id: feature-description
+  id: new-feature-description
   attributes:
     label: Describe the Feature
     description: Please describe the Feature or Option as clear and concise as possible
-    placeholder: Example - When I open the Print Preview, I want to change the Fontsize.
-    value: "Example - When I open the Print Preview, I want to change the Fontsize."
+    placeholder: Example - When I open the Print Preview, I need to change the Fontsize.
+    value: "Example - When I open the Print Preview, I need to change the Fontsize."
   validations:
     required: true
 - type: textarea
-  id: feature-usecase
+  id: new-feature-usecase
   attributes:
-    label: Describe the Use case
-    description: Please describe the Use case as clear and concise as possible
+    label: Describe the Usecase
+    description: Please describe the Usecase as clear and concise as possible
     placeholder: Example - The Text in the Print Preview is too small and I can not read it
     value: "Example - The Text in the Print Preview is too small and I can not read it."
   validations:
