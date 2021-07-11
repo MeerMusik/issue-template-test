@@ -18,8 +18,7 @@ body:
     description: Please search through the Issues to see if there is already an open Issue for the Language you wish to add or fix!
     options:
     - label: I have searched the existing open Issues. There is no open Issue for this specific Language / Translation
-  validations:
-    required: true
+      required: true
 - type: textarea
   id: new-language
   attributes:
