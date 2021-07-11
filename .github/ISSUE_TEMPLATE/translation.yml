@@ -1,4 +1,4 @@
-name: Translation - Add a new Translation or fix an existing incomplete Translation - Temporary Solution! Sorry for the inconvenience!
+name: Translation - Add a new Translation or fix an existing incomplete Translation - DO NOT REMOVE THE 'WIP' LABEL! - Temporary Solution! Sorry for the inconvenience!
 description: Please use Locales from https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes - as the ISO is charging ~145 EUR even for Read Access as of July 2021.
 title: "[Translation]: "
 labels: ['Type: Translation', 'WIP']
