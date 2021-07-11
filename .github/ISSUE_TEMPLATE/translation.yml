@@ -10,7 +10,9 @@ body:
     value: |
       Thank you for helping with the Translation of the Tool!
       Please create a new Issue for each different Language!
-      For technical Problems, please use the Bug Report Form!
+      For technical Problems, please use the Bug Report Form!\n\n
+      DO NOT REMOVE THE 'WIP' LABEL! TRANSLATIONS WILL BE CHECKED MANUALLY!
+      I will remove the 'WIP' Label when your is ready to be merged!
 - type: checkboxes
   attributes:
     label: Does an open Issue already exist for this Language / Translation?
@@ -23,9 +25,9 @@ body:
   id: new-language
   attributes:
     label: Which Language you wish to add or fix?
-    description: What Language you wish to add or fix? Please use the Locales from "https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes"
+    description: Please use the Locales from "https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes"
     placeholder: Example 1 - English (US), en_US - Example 2 - English (UK), en_UK - Example 3 - German (Germany), de_DE - Example 4 - German (Switzerland), de_CH
-    value: "Example 1 - English (US), en_US - Example 2 - English (UK), en_UK - Example 3 - German (Germany), de_DE - Example 4 - German (Switzerland), de_CH" 
+    value: "Example 1 - English (US), en_US - Example 2 - English (UK), en_UK - Example 3 - German (Germany), de_DE - Example 4 - German (Switzerland), de_CH"
   validations:
     required: true
 - type: textarea
