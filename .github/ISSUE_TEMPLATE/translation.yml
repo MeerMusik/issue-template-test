@@ -8,11 +8,11 @@ body:
 - type: markdown
   attributes:
     value: |
-       DO NOT REMOVE 'WIP' FROM THE TITLE! DO NOT REMOVE THE 'Status: Work In Progress' LABEL! TRANSLATIONS WILL BE CHECKED MANUALLY!
+      DO NOT REMOVE 'WIP' FROM THE TITLE! DO NOT REMOVE THE 'Status: Work In Progress' LABEL! TRANSLATIONS WILL BE CHECKED MANUALLY!
+      
+      I will update the Title and Label when I am ready to integrate your changes!  
        
-       I will update the Title and Label when I am ready to integrate your changes!  
-       
-       If you want to add multiple Languages, please create a new Issue for each Language!
+      If you want to add multiple Languages, please create a new Issue for each Language!
       
       Thank you for helping to translate the Tool!
 - type: checkboxes
