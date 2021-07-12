@@ -1,0 +1,35 @@
+name: Question - Please read the FAQ and the Manual first! If you still have Questions after reading both, feel free to ask them by using this Form
+description: URL FAQ = ADD ME LATER - URL Manual = ADD ME LATER
+title: "[Question]: "
+labels: ['Type: Question']
+assignees:
+  - MeerMusik
+body:
+- type: markdown
+  attributes:
+    value: |
+      Keep in mind, that this Issue will be public and can be read by anyone! Do not publish private Informations like your eMail Address here!
+- type: checkboxes
+  attributes:
+    label: Does an open Issue already exist for this Question?
+    description: Please search through the Issues to see if there is already an open Issue for your Question!
+    options:
+    - label: I have searched the existing Issues. There is no Issue for this specific Question
+      required: true
+- type: textarea
+  id: new-question
+  attributes:
+    label: Ask away!
+    description: Ask whatever you want, as long as it has to do with the Content of this Repository :)
+    placeholder: Ask whatever you want, as long as it has to do with the Content of this Repository :)
+    value: "Ask whatever you want, as long as it has to do with the Content of this Repository :)"
+  validations:
+    required: true
+- type: checkboxes
+  id: code-of-conduct
+  attributes:
+    label: Code of Conduct
+    description: By submitting this issue, you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md)
+    options:
+    - label: I agree to follow the Code of Conduct of this Project in addition to the Guidelines and Rules of GitHub
+      required: true
