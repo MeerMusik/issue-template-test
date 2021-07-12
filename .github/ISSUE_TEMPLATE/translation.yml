@@ -1,4 +1,4 @@
-name: Translation - Add a new Translation or fix an existing Translation - DO NOT REMOVE 'WIP' FROM THE TITLE! DO NOT REMOVE THE 'Status Work In Progress' LABEL! - Temporary Solution! Sorry for the inconvenience!
+name: Translation - Add a new Translation or fix an existing Translation - DO NOT REMOVE 'WIP' FROM THE TITLE! DO NOT REMOVE THE 'Work In Progress' LABEL! - Temporary Solution! Sorry for the inconvenience!
 description: Please use Locales from https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes - as the ISO is charging ~145 EUR even for Read Access as of July 2021.
 title: "[Translation]: WIP: "
 labels: ['Type: Translation', 'Status: Work In Progress']
@@ -10,22 +10,22 @@ body:
     value: |
       DO NOT REMOVE 'WIP' FROM THE TITLE! DO NOT REMOVE THE 'Status: Work In Progress' LABEL! TRANSLATIONS WILL BE CHECKED MANUALLY!
       
-      I will update the Title and Label when I am ready to integrate your changes!  
+      I will update the Title and Label when I am ready to integrate your changes!
        
       If you want to add multiple Languages, please create a new Issue for each Language!
       
       Thank you for helping to translate the Tool!
 - type: checkboxes
   attributes:
-    label: Does an open Issue already exist for this Language / Translation?
+    label: Does an open Issue already exist for this Translation?
     description: Please search through the Issues to see if there is already an open Issue for the Language you wish to add or fix!
     options:
-    - label: I have searched the existing open Issues. There is no open Issue for this specific Language / Translation
+    - label: I have searched the existing open Issues. There is no open Issue for this specific Translation
       required: true
 - type: textarea
   id: new-language
   attributes:
-    label: Which Language you wish to add or fix?
+    label: Which Language do you wish to add or fix?
     description: Please use the Locales from "https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes"
     placeholder: Example 1 - English (US), en_US - Example 2 - English (UK), en_UK - Example 3 - German (Germany), de_DE - Example 4 - German (Switzerland), de_CH
     value: "Example 1 - English (US), en_US - Example 2 - English (UK), en_UK - Example 3 - German (Germany), de_DE - Example 4 - German (Switzerland), de_CH"
@@ -34,12 +34,20 @@ body:
 - type: textarea
   id: language-strings
   attributes:
-    label: Please add the Translated String here
+    label: Please add the Translated Strings here
     description: You can use a Table Format or whatever displays Translated Strings Line by Line
     placeholder: Only one translated String per Line please! You can use a numbered List to display Strings Line by Line! Sorry for the inconvenience! I am looking for a better Solution long-term!
     value: "Only one translated String per Line please! You can use a numbered List to display Strings Line by Line! Sorry for the inconvenience! I am looking for a better Solution long-term!"
   validations:
     required: true
+- type: checkboxes
+  id: author-has-read-and-agrees-to-follow-contribution-rules
+  attributes:
+    label: Contribution Rules
+    description: By submitting this issue, you A.) confirm that you have read the [Contributing Rules](CONTRIBUTING.md) and B.) agree to follow them as closely as possible
+    options:
+    - label: I confirm that I have read the Contribution Rules and agree to follow them as closely as possible
+      required: true
 - type: checkboxes
   id: code-of-conduct
   attributes:
