@@ -1,5 +1,5 @@
-name: Bug Report - Technical Problems only! - NOT FOR TRANSLATIONS! Please use the Translation Form for Translations! Thank you!
-description: Something does not work at all. Something does only work partially. The App crashes. The App does not launch. - If you would like to wish a Feature or Option, please use the "Feature Request" Form!
+name: Bug Report - Technical Problems only! - NOT FOR TRANSLATIONS! NOT FOR FEATURE REQUESTS!
+description: Bugs. Glitches. UI Issues. If something does not work as expected or not at all. The App crashes or not even launch. - If you would like to wish a Feature or Option, please use the "Feature Request" Form!
 title: "[Bug]: "
 labels: ['Type: Bug', 'Status: Not Confirmed']
 assignees:
@@ -33,26 +33,27 @@ body:
     label: Which Operating System do you use? Multiple Answers possible
     multiple: true
     options:
-    - BSD
     - Arch Linux with GNOME Version 3
     - Arch Linux with KDE Version 5
+    - FreeBSD with GNOME 3
+    - FreeBSD with KDE 5
+    - Linux other
+    - macOS 64-Bit
     - Manjaro Linux with GNOME Version 3
     - Manjaro Linux with KDE Version 5
-    - Linux other
-    - macOS
     - Windows 7
     - Windows 8.1
     - Windows 10
-    - Other (not supported)
+    - Other (no direct support by me and / or the used Framework!)
   validations:
     required: true
 - type: input
   id: name-bsd-linux-distribution-desktop-environment
   attributes:
-    label: Name of the BSD Distribution OR Linux Distribution and used Desktop Environment
-    description: "Please type the Name of the BSD Distribution OR Linux Distribution and the Name of the Desktop Environment. If you are not using BSD or Linux, just type the Letters NA"
+    label: Name of the BSD or Linux Distribution and used Desktop Environment or the Name of the used OS if you selected "Other"
+    description: "If you selected 'Other' above, type the Name of the OS and / or Desktop Environment."
   validations:
-    required: true
+    required: false
 - type: dropdown
   id: linux-wayland-x11
   attributes:
@@ -72,7 +73,7 @@ body:
     options:
     - X86 (32-Bit)
     - X86_64 (64-Bit)
-    - 64-Bit with 32-Bit Multilibs / Compatibility Layer or something similar
+    - 64-Bit with 32-Bit Multilibs, Compatibility Layer or something similar
   validations:
     required: true
 - type: dropdown
@@ -103,7 +104,7 @@ body:
   id: additional_logs
   attributes:
     label: Relevant Log Output
-    description: Please copy and paste any relevant Log Output. This will be automatically formatted into code, so no need for backticks.
+    description: Please copy and paste any relevant Log Output if available. This will be automatically formatted into code, so no need for backticks.
     render: shell
 - type: checkboxes
   id: code-of-conduct
