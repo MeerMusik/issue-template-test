@@ -2,12 +2,30 @@
 blank_issues_enabled: false
 # Some Links that should help getting in Contact, answering Questions etc. to hopefully limit unnecessary Issue
 contact_links:
+  - name: FAQ - English - Answers get added as needed
+    url: https://github.com/MeerMusik/AKKomPolTool/Docs/FAQ_English.md
+    about: Should answer the most asked Questions. If you have still Questions after reading the FAQ, feel free to create a new Issue by using the Question Form.
+  - name: FAQ - German - Answers get added as needed
+    url: https://github.com/MeerMusik/AKKomPolTool/Docs/FAQ_German.md
+    about: Should answer the most asked Questions. If you have still Questions after reading the FAQ, feel free to create a new Issue by using the Question Form.
+  - name: PLACEHOLDER - Manual - Coming later
+    url: https://www..com
+    about: The Manual will be added around or shortly after Version 1.0 has been published
   - name: Twitter
     url: https://twitter.com/MeerMusik
-    about: Ask me a short Question on Twitter. Replies take somewhere between 2 - 48 hours. Tweets are public and readable by everyone! If you need to send personal Data, send me a Direct Message = DM!
-  - name: Website - FAQ - German only
-    url: https://oliverniebuhr.de
-    about: FAQ - Should answer the most Questions
-  - name: Website - Manual - German only
-    url: https://oliverniebuhr.de
-    about: The Manual will be added later after Version 1.0 has been published
+    about: Ask me a short Question on Twitter. Replies take somewhere between 2 - 96 hours. Tweets are public and readable by everyone! If you need to send personal Data, send me a Direct Message = DM!
+    
+# Configuration for new-issue-welcome - https://github.com/behaviorbot/new-issue-welcome
+# Comment to be posted to on first time issues
+newIssueWelcomeComment: >
+  Welcome and thank you for opening your first issue! If you have not done so already: Please make sure to follow the Issue Template
+
+# Configuration for new-pr-welcome - https://github.com/behaviorbot/new-pr-welcome
+# Comment to be posted to on PRs from first time contributors in your repository
+newPRWelcomeComment: >
+  Thank you for opening this pull request! If you have not done so already: Please check out our contributing rules here: [CONTRIBUTING.md](CONTRIBUTING.md)
+
+# Configuration for first-pr-merge - https://github.com/behaviorbot/first-pr-merge
+# Comment to be posted to on pull requests merged by a first time user
+firstPRMergeComment: >
+  Congrats on your first merged pull request! Thank you for your help to make this Project better byte by byte :) :+1:
