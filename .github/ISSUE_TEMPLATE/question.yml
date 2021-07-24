@@ -1,5 +1,5 @@
-name: Question - Please read the FAQ and the Manual first! If you still have Questions after reading both, feel free to ask them by using this Form
-description: URL FAQ = ADD ME LATER - URL Manual = ADD ME LATER
+name: Question - Please read the FAQ and the Manual first, which are listed below on this Page! If you still have Questions after reading both, feel free to ask them by using this Form.
+description: As long as your Questions have to do with the Content in this Repository, they are considered on Topic.
 title: "[Question]: "
 labels: ['Type: Question']
 assignees:
@@ -20,9 +20,9 @@ body:
   id: new-question
   attributes:
     label: Ask away!
-    description: Ask whatever you want, as long as it has to do with the Content of this Repository :)
-    placeholder: Ask whatever you want, as long as it has to do with the Content of this Repository :)
-    value: "Ask whatever you want, as long as it has to do with the Content of this Repository :)"
+    description: Ask whatever you want, as long as it has to do with the Content of this Repository!
+    placeholder: Ask whatever you want, as long as it has to do with the Content of this Repository!
+    value: "Ask whatever you want, as long as it has to do with the Content of this Repository!"
   validations:
     required: true
 - type: checkboxes
