@@ -102,6 +102,11 @@ body:
   validations:
     required: true
 - type: textarea
+  id: additional_infos_from_issue_creator
+  attributes:
+    label: Anything you would like to add?
+    description: If you have additional Infos you would like to add, you can do this here
+- type: textarea
   id: additional_logs
   attributes:
     label: Relevant Log Output
