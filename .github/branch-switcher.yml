@@ -4,5 +4,5 @@ preferredBranch: develop
 #- branch: dont-touch-*
 #- label: ignore-me
 switchComment: >
-  Hello @{{author}}. The base Branch of your pull Request has been changed
-  to {{preferredBranch}}. Please use for all future contributions the {{preferredBranch}} Branch. Thank you!
+  Hello @{{author}}. The base Branch of your pull Request has been changed to {{preferredBranch}}.
+  Please use for all future contributions the {{preferredBranch}} Branch. Thank you!
