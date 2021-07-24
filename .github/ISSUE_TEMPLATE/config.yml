@@ -9,7 +9,7 @@ contact_links:
     url: [FAQ_English.md](Docs/FAQ_English.md)
     about: Should answer the most asked Questions. If you have still Questions after reading the FAQ, feel free to create a new Issue by using the Question Form.
   - name: PLACEHOLDER - Manual - Coming later
-    url: www.COMINGLATER.com
+    url: https://www.COMINGLATER.com
     about: The Manual will be added around or shortly after Version 1.0 has been published
   - name: Twitter
     url: https://twitter.com/MeerMusik
