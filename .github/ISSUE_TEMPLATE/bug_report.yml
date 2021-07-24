@@ -1,5 +1,5 @@
 name: Bug Report - Technical Problems only! - NOT FOR TRANSLATIONS! NOT FOR FEATURE REQUESTS!
-description: Bugs. Glitches. UI Issues. If something does not work as expected or not at all. The App crashes or not even launch. - To request a Feature or Option, please use the "Feature Request" Form!
+description: Bugs. Glitches. UI Issues. If something does not work as expected or not at all. The App crashes or does not launch. - To request a Feature or Option, please use the "Feature Request" Form!
 title: "[Bug]: "
 labels: ['Type: Bug', 'Status: Not Confirmed']
 assignees:
