@@ -1,5 +1,5 @@
-name: Feature Request
-description: To wish a new Feature or a new Option (or multiple Options) for an existing Features. To request multiple new Features, please create a new Issue for each Feature so it does not get unnecessary messy!
+name: Feature Request - For technical Problems, use the Bug Report Form! For everything about Translations, use the Translation Form!
+description: To wish a new Feature or a new Option (or multiple Options) for an existing Feature. To request multiple new Features, please create a new Issue for each new Feature! Thank you!
 title: "[Feature Request]: "
 labels: ['Type: Feature Request']
 assignees:
@@ -9,10 +9,7 @@ body:
   attributes:
     value: |
       Thank you for taking the time to fill out the Feature Request Form!
-      If you wish to request multiple new Features, please create a new Issue for each Feature!
-      
-      If you are not sure what to do, ask a Question through the Question Form, send me a Tweet or an eMail. I reply usually within 96 hours.
-      
+      If you wish to request multiple new Features, please create a new Issue for each new Feature!
       For technical Problems, please use the Bug Report Form. For everything about Translations, please use the Translation Form.
 - type: checkboxes
   attributes:
