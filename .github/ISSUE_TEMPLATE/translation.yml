@@ -1,5 +1,5 @@
-name: Translation - Add a new Translation or fix an existing Translation - DO NOT REMOVE 'WIP' FROM THE TITLE! DO NOT REMOVE THE 'Work In Progress' LABEL! - Temporary Solution! Sorry for the inconvenience!
-description: Please use Locales from https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes - as the ISO is charging ~145 EUR even for Read Access as of July 2021.
+name: Translation - Add a new Translation. Fix an existing Translation. - DO NOT REMOVE 'WIP' FROM THE TITLE! DO NOT REMOVE THE 'Work In Progress' LABEL! - Temporary Solution! Sorry for the inconvenience!
+description: You can use the Locales listed at https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes - as the ISO is charging ~145 EUR even for Read Access as of July 2021.
 title: "[Translation]: WIP: "
 labels: ['Type: Translation', 'Status: Work In Progress']
 assignees:
@@ -9,7 +9,6 @@ body:
   attributes:
     value: |
       DO NOT REMOVE 'WIP' FROM THE TITLE! DO NOT REMOVE THE 'Status: Work In Progress' LABEL! TRANSLATIONS WILL BE CHECKED MANUALLY!
-      
       I will update the Title and Label when I am ready to integrate your changes!
        
       If you want to add multiple Languages, please create a new Issue for each Language!
@@ -35,7 +34,7 @@ body:
   id: language-strings
   attributes:
     label: Please add the Translated Strings here
-    description: You can use a Table Format or whatever displays Translated Strings Line by Line
+    description: Please use for example a Numbered List to display Translated Strings Line by Line
     placeholder: Only one translated String per Line please! You can use a numbered List to display Strings Line by Line! Sorry for the inconvenience! I am looking for a better Solution long-term!
     value: "Only one translated String per Line please! You can use a numbered List to display Strings Line by Line! Sorry for the inconvenience! I am looking for a better Solution long-term!"
   validations:
