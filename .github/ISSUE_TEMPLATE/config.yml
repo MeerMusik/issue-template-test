@@ -3,10 +3,10 @@ blank_issues_enabled: false
 # Some Links that should help getting in Contact, answering Questions etc. to hopefully limit unnecessary Issue
 contact_links:
   - name: FAQ - German - Answers get added as needed
-    url: [FAQ_German.md](Docs/FAQ_German.md)
+    url: (Docs/FAQ_German.md)
     about: Should answer the most asked Questions. If you have still Questions after reading the FAQ, feel free to create a new Issue by using the Question Form.
   - name: FAQ - English - Answers get added as needed
-    url: [FAQ_English.md](Docs/FAQ_English.md)
+    url: (Docs/FAQ_English.md)
     about: Should answer the most asked Questions. If you have still Questions after reading the FAQ, feel free to create a new Issue by using the Question Form.
   - name: PLACEHOLDER - Manual - Coming later
     url: https://www.COMINGLATER.com
