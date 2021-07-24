@@ -2,11 +2,11 @@
 blank_issues_enabled: false
 # Some Links that should help getting in Contact, answering Questions etc. to hopefully limit unnecessary Issue
 contact_links:
-  - name: FAQ - German - Answers get added as needed
-    url: (Docs/FAQ_German.md)
-    about: Should answer the most asked Questions. If you have still Questions after reading the FAQ, feel free to create a new Issue by using the Question Form.
   - name: FAQ - English - Answers get added as needed
-    url: (Docs/FAQ_English.md)
+    url: https://github.com/MeerMusik/AKKomPolTool/Docs/FAQ_English.md
+    about: Should answer the most asked Questions. If you have still Questions after reading the FAQ, feel free to create a new Issue by using the Question Form.
+  - name: FAQ - German - Answers get added as needed
+    url: https://github.com/MeerMusik/AKKomPolTool/Docs/FAQ_German.md
     about: Should answer the most asked Questions. If you have still Questions after reading the FAQ, feel free to create a new Issue by using the Question Form.
   - name: PLACEHOLDER - Manual - Coming later
     url: https://www..com
