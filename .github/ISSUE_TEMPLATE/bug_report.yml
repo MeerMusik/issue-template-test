@@ -94,9 +94,10 @@ body:
     description: When you experience the Bug, does the Tool crash or is it still usable? Does it become unresponsive?
     multiple: false
     options:
-    - The Tool crashes to Desktop (CTD)
+    - The Tool always crashes to Desktop (CTD)
+    - The Tool sometimes crashes to Desktop (CTD)
     - The Tool does NOT crash to Desktop and is still usable
-    - The Tool does not crash to Desktop but becomes unresponsive and must be terminated through the Task Manager
+    - The Tool does NOT crash to Desktop but becomes unresponsive and must be terminated through the Task Manager
     - Answer does not apply - The Tool does not launch (FIXME - IFELSE NEED GH API)
   validations:
     required: true
