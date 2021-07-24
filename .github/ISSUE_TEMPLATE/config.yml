@@ -14,7 +14,7 @@ contact_links:
   - name: Twitter
     url: https://twitter.com/MeerMusik
     about: Ask me a short Question on Twitter. Replies take somewhere between 2 - 96 hours. Tweets are public and readable by everyone! If you need to send personal Data, send me a Direct Message = DM!
-    
+
 # Configuration for new-issue-welcome - https://github.com/behaviorbot/new-issue-welcome
 # Comment to be posted to on first time issues
 newIssueWelcomeComment: >
