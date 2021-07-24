@@ -1,0 +1,14 @@
+# The following branches will not automatically be deleted
+exclude:
+  - accessibility
+  - accessibility-*
+  - develop
+  - develop-*
+  - feature
+  - feature-*
+  - translation
+  - translation-*
+  - master
+  - main
+# Whether or not a branch should be deleted if PR is closed without merging
+delete_closed_pr: true

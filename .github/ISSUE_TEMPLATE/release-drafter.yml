@@ -1,0 +1,6 @@
+#config file for https://github.com/release-drafter/release-drafter
+#TODO ADD MORE DETAILED CONFIGURATION!
+template: |
+  ## Changes since last Version
+
+  $CHANGES
