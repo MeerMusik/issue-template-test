@@ -1,5 +1,5 @@
 name: Translation - Add a new Translation. Fix an existing Translation. - DO NOT REMOVE 'WIP' FROM THE TITLE! DO NOT REMOVE THE 'Work In Progress' LABEL! - Temporary Solution! Sorry for the inconvenience!
-description: You can use the Locales listed at https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes - as the ISO is charging ~145 EUR even for Read Access as of July 2021.
+description: You can use the Locales from Column '639-1' listed at https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 title: "[Translation]: WIP: "
 labels: ['Type: Translation', 'Status: Work In Progress']
 assignees:
@@ -24,17 +24,17 @@ body:
 - type: textarea
   id: new-language
   attributes:
-    label: Which Language do you wish to add or fix?
-    description: Please use the Locales from "https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes"
-    placeholder: Example 1 - English (US), en_US - Example 2 - English (UK), en_UK - Example 3 - German (Germany), de_DE - Example 4 - German (Switzerland), de_CH
-    value: "Example 1 - English (US), en_US - Example 2 - English (UK), en_UK - Example 3 - German (Germany), de_DE - Example 4 - German (Switzerland), de_CH"
+    label: Which Language and Locale do you wish to add or fix?
+    description: If you are unsure: Use the Locales from Column "639-1" from "https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes"
+    placeholder: Example 1 - English, en - Example 2 - German, de. - Hint: For now, No differentiation between for Example US and UK; German Germany and Germany Switzerland.
+    value: "Example 1 - English, en - Example 2 - German, de. - Hint: For now, No differentiation between for Example US and UK; German Germany and Germany Switzerland."
   validations:
     required: true
 - type: textarea
   id: language-strings
   attributes:
     label: Please add the Translated Strings here
-    description: Please use for example a Numbered List to display Translated Strings Line by Line
+    description: Please use for example a Numbered List to display Translated Strings Line by Line!
     placeholder: Only one translated String per Line please! You can use a numbered List to display Strings Line by Line! Sorry for the inconvenience! I am looking for a better Solution long-term!
     value: "Only one translated String per Line please! You can use a numbered List to display Strings Line by Line! Sorry for the inconvenience! I am looking for a better Solution long-term!"
   validations:
