@@ -17,13 +17,13 @@ body:
     label: Contribution Rules
     description: By submitting this issue, you A.) confirm that you have read the [Contribution Rules](../blob/main/CONTRIBUTING.md) and B.) agree to follow them as closely as possible
     options:
-    - label: I confirm that I have read the [Contribution Rules](../CONTRIBUTING.md) and agree to follow them as closely as possible
+    - label: I confirm that I have read the Contribution Rules and agree to follow them as closely as possible
       required: true
 - type: checkboxes
   id: author-has-read-and-agrees-to-follow-code-of-conduct
   attributes:
     label: Code of Conduct
-    description: By submitting this issue, you A.) confirm that you have read the [Code of Conduct](CODE_OF_CONDUCT.md) and B.) agree to follow it
+    description: By submitting this issue, you A.) confirm that you have read the [Code of Conduct](../blob/main/CODE_OF_CONDUCT.md) and B.) agree to follow it
     options:
     - label: I confirm that I have read the Code of Conduct and agree to follow it
       required: true
