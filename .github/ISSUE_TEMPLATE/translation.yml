@@ -15,6 +15,22 @@ body:
       
       Thank you for helping to translate the Tool!
 - type: checkboxes
+  id: author-has-read-and-agrees-to-follow-contribution-rules
+  attributes:
+    label: Contribution Rules
+    description: By submitting this issue, you A.) confirm that you have read the [Contributing Rules](CONTRIBUTING.md) and B.) agree to follow them as closely as possible
+    options:
+    - label: I confirm that I have read the Contribution Rules and agree to follow them as closely as possible
+      required: true
+- type: checkboxes
+  id: code-of-conduct
+  attributes:
+    label: Code of Conduct
+    description: By submitting this issue, you A.) confirm that you have read the [Code of Conduct](CODE_OF_CONDUCT.md) and B.) agree to follow it
+    options:
+    - label: I confirm that I have read the Code of Conduct and agree to follow it
+      required: true
+- type: checkboxes
   attributes:
     label: Does an open Issue already exist for this Translation?
     description: Please search through the Issues to see if there is already an open Issue for the Language you wish to add or fix!
@@ -39,19 +55,3 @@ body:
     value: "Only one translated String per Line please! You can use a numbered List to display Strings Line by Line! Sorry for the inconvenience! I am looking for a better Solution long-term! (Delete this Example Text!)"
   validations:
     required: true
-- type: checkboxes
-  id: author-has-read-and-agrees-to-follow-contribution-rules
-  attributes:
-    label: Contribution Rules
-    description: By submitting this issue, you A.) confirm that you have read the [Contributing Rules](CONTRIBUTING.md) and B.) agree to follow them as closely as possible
-    options:
-    - label: I confirm that I have read the Contribution Rules and agree to follow them as closely as possible
-      required: true
-- type: checkboxes
-  id: code-of-conduct
-  attributes:
-    label: Code of Conduct
-    description: By submitting this issue, you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md)
-    options:
-    - label: I agree to follow the Code of Conduct of this Project in addition to the Guidelines and Rules of GitHub
-      required: true
