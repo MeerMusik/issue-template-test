@@ -10,6 +10,22 @@ body:
     value: |
       Keep in mind, that this Issue will be public and can be read by anyone! Do not publish private Informations like your eMail Address here!
 - type: checkboxes
+  id: author-has-read-and-agrees-to-follow-contribution-rules
+  attributes:
+    label: Contribution Rules
+    description: By submitting this issue, you A.) confirm that you have read the [Contributing Rules](CONTRIBUTING.md) and B.) agree to follow them as closely as possible
+    options:
+    - label: I confirm that I have read the Contribution Rules and agree to follow them as closely as possible
+      required: true
+- type: checkboxes
+  id: code-of-conduct
+  attributes:
+    label: Code of Conduct
+    description: By submitting this issue, you A.) confirm that you have read the [Code of Conduct](CODE_OF_CONDUCT.md) and B.) agree to follow it
+    options:
+    - label: I agree to follow the Code of Conduct of this Project in addition to the Guidelines and Rules of GitHub
+      required: true
+- type: checkboxes
   attributes:
     label: Does an open Issue already exist for this Question?
     description: Please search through the Issues to see if there is already an open Issue for your Question!
@@ -25,11 +41,3 @@ body:
     value: "Ask whatever you want, as long as it has to do with the Content of this Repository!"
   validations:
     required: true
-- type: checkboxes
-  id: code-of-conduct
-  attributes:
-    label: Code of Conduct
-    description: By submitting this issue, you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md)
-    options:
-    - label: I agree to follow the Code of Conduct of this Project in addition to the Guidelines and Rules of GitHub
-      required: true
