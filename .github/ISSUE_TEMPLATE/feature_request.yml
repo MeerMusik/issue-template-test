@@ -12,6 +12,22 @@ body:
       If you wish to request multiple new Features, please create a new Issue for each new Feature!
       For technical Problems, please use the Bug Report Form. For everything about Translations, please use the Translation Form.
 - type: checkboxes
+  id: author-has-read-and-agrees-to-follow-contribution-rules
+  attributes:
+    label: Contribution Rules
+    description: By submitting this issue, you A.) confirm that you have read the [Contributing Rules](CONTRIBUTING.md) and B.) agree to follow them as closely as possible
+    options:
+    - label: I confirm that I have read the Contribution Rules and agree to follow them as closely as possible
+      required: true
+- type: checkboxes
+  id: code-of-conduct
+  attributes:
+    label: Code of Conduct
+    description: By submitting this issue, you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md)
+    options:
+    - label: I agree to follow the Code of Conduct of this Project in addition to the Guidelines and Rules of GitHub
+      required: true
+- type: checkboxes
   attributes:
     label: Does an Issue already exist for this Feature Request?
     description: Please search through the Issues to see if an Issue already exists for the Feature you wish to request!
@@ -36,11 +52,3 @@ body:
     value: "Example - The Text in the Print Preview is too small and I can not read it."
   validations:
     required: true
-- type: checkboxes
-  id: code-of-conduct
-  attributes:
-    label: Code of Conduct
-    description: By submitting this issue, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md)
-    options:
-    - label: I agree to follow the Code of Conduct of this Project in addition to the Guidelines and Rules of GitHub
-      required: true
