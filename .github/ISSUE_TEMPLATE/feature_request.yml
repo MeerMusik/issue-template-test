@@ -14,7 +14,7 @@ body:
 - type: checkboxes
   id: author-has-read-and-agrees-to-follow-contribution-rules
   attributes:
-    label: Contribution Rules
+    label: Contribution Rules - [Contribution Rules](CONTRIBUTING.md)
     description: By submitting this issue, you A.) confirm that you have read the [Contribution Rules](CONTRIBUTING.md) and B.) agree to follow them as closely as possible
     options:
     - label: I confirm that I have read the [Contribution Rules](CONTRIBUTING.md) and agree to follow them as closely as possible
