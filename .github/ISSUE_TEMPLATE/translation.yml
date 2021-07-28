@@ -25,7 +25,7 @@ body:
   id: new-language
   attributes:
     label: Which Language and Locale do you wish to add or fix?
-    description: If you are unsure: Use the Locales from Column "639-1" from "https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes"
+    description: If you are unsure: Use the Locales from Column '639-1' from 'https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes'
     placeholder: Example 1 - English, en - Example 2 - German, de. - Hint: For now, No differentiation between for Example US and UK; German Germany and Germany Switzerland.
     value: "Example 1 - English, en - Example 2 - German, de. - Hint: For now, No differentiation between for Example US and UK; German Germany and Germany Switzerland."
   validations:
