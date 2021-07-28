@@ -40,7 +40,7 @@ body:
     label: Describe the Feature
     description: Please describe the Feature or Option as clear and concise as possible
     placeholder: Example - When I open the Print Preview, I need to change the Fontsize.
-    value: "Example - When I open the Print Preview, I need to change the Fontsize."
+    value: "Example - When I open the Print Preview, I need to change the Fontsize. (Delete this Example Text!)"
   validations:
     required: true
 - type: textarea
@@ -49,6 +49,6 @@ body:
     label: Describe the Usecase
     description: Please describe the Usecase as clear and concise as possible
     placeholder: Example - The Text in the Print Preview is too small and I can not read it
-    value: "Example - The Text in the Print Preview is too small and I can not read it."
+    value: "Example - The Text in the Print Preview is too small and I can not read it. (Delete this Example Text!)"
   validations:
     required: true
