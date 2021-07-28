@@ -40,7 +40,7 @@ body:
     label: Describe the Bug
     description: Please describe the Bug as clear and concise as possible
     placeholder: Example - I opened an existing Document but the Editor is empty
-    value: "Example: I opened an existing Document but the Editor is empty"
+    value: "Example: I opened an existing Document but the Editor is empty (Delete this Example Text!)"
   validations:
     required: true
 - type: dropdown
