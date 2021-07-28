@@ -12,6 +12,22 @@ body:
       If you wish to request a new Feature or Option, please use the Feature Request Form!
       For everything about missing or incomplete Translations, please use the Translation Form!
 - type: checkboxes
+  id: author-has-read-and-agrees-to-follow-contribution-rules
+  attributes:
+    label: Contribution Rules
+    description: By submitting this issue, you A.) confirm that you have read the [Contributing Rules](CONTRIBUTING.md) and B.) agree to follow them as closely as possible
+    options:
+    - label: I confirm that I have read the Contribution Rules and agree to follow them as closely as possible
+      required: true
+- type: checkboxes
+  id: code-of-conduct
+  attributes:
+    label: Code of Conduct
+    description: By submitting this issue, you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md)
+    options:
+    - label: I agree to follow the Code of Conduct of this Project in addition to the Guidelines and Rules of GitHub
+      required: true
+- type: checkboxes
   attributes:
     label: Does an Issue already exist for this Bug?
     description: Please search through the Issues to see if an Issue already exists for the Bug you have encountered!
@@ -112,11 +128,3 @@ body:
     label: Relevant Log Output
     description: Please copy and paste any relevant Log Output if available. This will be automatically formatted into code, so no need for backticks.
     render: shell
-- type: checkboxes
-  id: code-of-conduct
-  attributes:
-    label: Code of Conduct
-    description: By submitting this issue, you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md)
-    options:
-    - label: I agree to follow the Code of Conduct of this Project in addition to the Guidelines and Rules of GitHub
-      required: true
