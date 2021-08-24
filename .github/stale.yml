@@ -12,8 +12,8 @@ onlyLabels: []
 
 # Issues or Pull Requests with these labels will never be considered stale. Set to `[]` to disable
 exemptLabels:
-  - pinned
-  - security
+  - "Status: Pinned"
+  - "Type: Security"
   - "Type: Question"
   - "Status: Do Not Mark As Stale"
 
