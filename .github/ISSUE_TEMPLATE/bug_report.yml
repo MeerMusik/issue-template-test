@@ -1,5 +1,5 @@
-name: Bug Report - Technical Problems only! - NOT FOR TRANSLATIONS! NOT FOR FEATURE REQUESTS!
-description: Bugs. Glitches. UI Issues. If something does not work as expected or not at all. The App crashes or does not launch. - To request a Feature or Option, please use the 'Feature Request' Form!
+name: Bug Report Form. Technical Problems only! NOT FOR TRANSLATIONS! NOT FOR FEATURE REQUESTS!
+description: Something does not work as expected or not at all. Bugs. Glitches. UI Issues. The App crashes, hangs or does not launch.
 title: "[Bug]: "
 labels: ['Type: Bug', 'Status: Not Confirmed']
 assignees:
@@ -15,9 +15,9 @@ body:
   id: author-has-read-and-agrees-to-follow-contribution-rules
   attributes:
     label: Contribution Rules
-    description: By submitting this issue, you A.) confirm that you have read the [Contribution Rules](../blob/main/CONTRIBUTING.md) and B.) agree to follow them as closely as possible
+    description: By submitting this issue, you A.) confirm that you have read the [Contribution Rules](../blob/main/CONTRIBUTING.md) and B.) agree to follow them
     options:
-    - label: I confirm that I have read the Contribution Rules and agree to follow them as closely as possible
+    - label: I confirm that I have read the Contribution Rules and I agree to follow them
       required: true
 - type: checkboxes
   id: author-has-read-and-agrees-to-follow-code-of-conduct
@@ -25,14 +25,14 @@ body:
     label: Code of Conduct
     description: By submitting this issue, you A.) confirm that you have read the [Code of Conduct](../blob/main/CODE_OF_CONDUCT.md) and B.) agree to follow it
     options:
-    - label: I confirm that I have read the Code of Conduct and agree to follow it
+    - label: I confirm that I have read the Code of Conduct and I agree to follow it
       required: true
 - type: checkboxes
   attributes:
     label: Does an Issue already exist for this Bug?
-    description: Please search through the Issues to see if an Issue already exists for the Bug you have encountered!
+    description: Please look at the open Issues to make sure there is not already a Report for the Bug you have encountered!
     options:
-    - label: I have searched the existing Issues. There is no Issue for this specific Bug
+    - label: I have looked at the existing open Issues. There is no open Issue for this specific Bug
       required: true
 - type: textarea
   id: bug-description

@@ -1,4 +1,4 @@
-name: Question - Please read the FAQ and the Manual first, which are listed below on this Page! If you still have Questions after reading both, feel free to ask them by using this Form.
+name: Question Form. Please read the FAQ and the Manual first, which are listed below on this Page! If you still have Questions after reading both, feel free to ask them by using this Form.
 description: As long as your Questions have to do with the Content in this Repository, they are considered on Topic.
 title: "[Question]: "
 labels: ['Type: Question']
@@ -8,14 +8,14 @@ body:
 - type: markdown
   attributes:
     value: |
-      Keep in mind, that this Issue will be public and can be read by anyone! Do not publish private Informations like your eMail Address here!
+      This Issue will be public and can be read by anyone! Do not publish private Informations here!
 - type: checkboxes
   id: author-has-read-and-agrees-to-follow-contribution-rules
   attributes:
     label: Contribution Rules
-    description: By submitting this issue, you A.) confirm that you have read the [Contribution Rules](../blob/main/CONTRIBUTING.md) and B.) agree to follow them as closely as possible
+    description: By submitting this issue, you A.) confirm that you have read the [Contribution Rules](../blob/main/CONTRIBUTING.md) and B.) agree to follow them
     options:
-    - label: I confirm that I have read the Contribution Rules and agree to follow them as closely as possible
+    - label: I confirm that I have read the Contribution Rules and I agree to follow them
       required: true
 - type: checkboxes
   id: author-has-read-and-agrees-to-follow-code-of-conduct
@@ -23,14 +23,14 @@ body:
     label: Code of Conduct
     description: By submitting this issue, you A.) confirm that you have read the [Code of Conduct](../blob/main/CODE_OF_CONDUCT.md) and B.) agree to follow it
     options:
-    - label: I confirm that I have read the Code of Conduct and agree to follow it
+    - label: I confirm that I have read the Code of Conduct and I agree to follow it
       required: true
 - type: checkboxes
   attributes:
-    label: Does an open Issue already exist for this Question?
-    description: Please search through the Issues to see if there is already an open Issue for your Question!
+    label: Does an Issue already exist which do answer your Question?
+    description: Please look at the existing Issues to make sure your Question does not already exist!
     options:
-    - label: I have searched the existing Issues. There is no Issue for this specific Question
+    - label: I have looked at the existing Issues. My Question does not exist or the detail I would like know about was not answered in a similar Question
       required: true
 - type: textarea
   id: new-question
