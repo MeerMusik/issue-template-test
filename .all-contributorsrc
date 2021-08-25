@@ -1,0 +1,25 @@
+{
+  "files": [
+    "CONTRIBUTORS.md"
+  ],
+  "imageSize": 100,
+  "contributorsPerLine": 7,
+  "contributorsSortAlphabetically": false,
+  "badgeTemplate": "[![All Contributors](https://img.shields.io/badge/all_contributors-<%= contributors.length %>-orange.svg?style=flat-square)](#contributors)",
+  "skipCi": true,
+  "contributors": [
+    {
+      "login": "MeerMusik",
+      "name": "Oliver Niebuhr",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10266549?v=4",
+      "profile": "https://github.com/MeerMusik",
+      "contributions": [
+        "test"
+      ]
+    }
+  ],
+  "projectName": "issue-template-test",
+  "projectOwner": "MeerMusik",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
