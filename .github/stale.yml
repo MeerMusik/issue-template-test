@@ -27,7 +27,7 @@ exemptMilestones: false
 exemptAssignees: false
 
 # Label to use when marking as stale
-staleLabel: "Status: Stale by StaleBot"
+staleLabel: "Status: Marked Stale by StaleBot"
 
 # Comment to post when marking as stale. Set to `false` to disable
 markComment: >
@@ -40,9 +40,9 @@ markComment: >
 
 # Comment to post when closing a stale Issue or Pull Request.
 # closeComment: >
-   This Issue was not updated after it was marked as stale. The second Timeframe to add the required Infos has expired.
+   This Issue was not updated after it was marked as stale. The second Timeframe to add the required Information has expired.
    This Issue is now closed! Feel free to re-open the Issue by adding the required Informations!
-   If you just re-open the Issue without adding the required Infos, the Issue will be closed again.
+   If you just re-open the Issue without adding the required Informations, the Issue will be closed again.
    Thank you for your understanding!
 
 # Limit the number of actions per hour, from 1-30. Default is 30
