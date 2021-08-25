@@ -20,8 +20,8 @@ If you want to add a new Option or multiple new Options for an existing Feature,
 
 ## You confirm that you have read and agree to follow the Contribution Rules and the Code of Conduct!
 Everyone is required to read and follow the Contribution Rules and the Code of Conduct. Removing this Part does not change that!
-- [] I have read and agree to follow the [Contribution Rules](../blob/main/CONTRIBUTING.md)<br/>
-- [] I have read and agree to follow the [Code of Conduct](../blob/main/CODE_OF_CONDUCT.md)<br/>
+- [] I have read and agree to follow the [Contribution Rules](../CONTRIBUTING.md)<br/>
+- [] I have read and agree to follow the [Code of Conduct](../CODE_OF_CONDUCT.md)<br/>
 
 ## Is there already an open Pull Request for this specific Issue?
 - [] I have checked the open Pull Requests and there is no open Pull Request for this specific Issue<br/>
