@@ -27,12 +27,11 @@ body:
   id: author-has-read-and-agrees-to-follow-contribution-rules
   attributes:
     label: Contribution Rules
+    required: true
     description: By submitting this issue, I A.) confirm that I have read the [Contribution Rules](../blob/main/CONTRIBUTING.md) and B.) agree to comply with them
     options:
-    multiple: true
     - label: I confirm that I have read the Contribution Rules and I agree to comply with them
     - label: I am only reporting a Bug without submitting Code or Documentation Changes or creating a Pull Request
-      required: true
 - type: checkboxes
   id: author-has-checked-issue-list
   attributes:
