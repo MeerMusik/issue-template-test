@@ -29,9 +29,10 @@ body:
     label: Contribution Rules
     description: By submitting this issue, I A.) confirm that I have read the [Contribution Rules](../blob/main/CONTRIBUTING.md) and B.) agree to comply with them
     options:
-    required: true
     - label: I confirm that I have read the Contribution Rules and I agree to comply with them
     - label: I am only reporting a Bug without submitting Code or Documentation Changes or creating a Pull Request
+  validations:
+    required: true
 - type: checkboxes
   id: author-has-checked-issue-list
   attributes:
