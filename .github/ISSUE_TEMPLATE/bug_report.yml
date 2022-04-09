@@ -36,7 +36,6 @@ body:
   id: author-has-checked-issue-list
   attributes:
     label: Does an Issue already exist for this Bug?
-    multiple: true
     description: Please look at the [Issues](../../../../issues) to make sure there is not already a Report for the Bug you have encountered!
     options:
     - label: I have looked at the existing open and closed Issues. There is no Issue for this specific Bug
