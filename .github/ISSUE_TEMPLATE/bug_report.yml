@@ -10,11 +10,16 @@ body:
     value: |
       Thank you for filling out the Bug Report! If you are unsure about something, just mention it in the Box 'Anything you would like to add?' near the end of this Form.
 
-      Please make sure to read the [Code of Conduct](../blob/main/CODE_OF_CONDUCT.md). If you plan to submit a commit or Pull Request, please also read the [Contribution Rules](../blob/main/CONTRIBUTING.md). You have to comply with them.
-
-      Please fill out the Form in english! Reports in other Languages will be ignored and closed after 30 Days without being translated into english! If you need a Free Translator, you can for example use
+      Please read the [Code of Conduct](../blob/main/CODE_OF_CONDUCT.md). If you submit a commit or Pull Request, please also read the [Contribution Rules](../blob/main/CONTRIBUTING.md). You have to comply with them.
       
+      1. Please make sure you are running the latest Version of your Operating System and the App!
+      
+      2. Please fill out the Form in english! Reports in other Languages will be ignored and closed after 30 Days without being translated into english! If you need a Free Translator, you can for example use
       [Deepl.com - Website](https://www.deepl.com/translator) which is based in Germany. Or whichever Service you prefer.
+      
+      3. Make sure to check the [existing Issues](../../../../issues/) - if your Issue already exist, please upvote an Issue instead of writing "+1" or something similar.
+      
+      4. If your Issue for your Operating System exist but has been closed, you can add your comment in the existing Issue. 
 - type: checkboxes
   id: author-has-read-and-agrees-to-follow-code-of-conduct
   attributes:
