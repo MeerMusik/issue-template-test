@@ -30,6 +30,6 @@ body:
     label: Ask away!
     description: Ask whatever you want, as long as it has to do with the Content of this Repository!
     placeholder: Ask whatever you want, as long as it has to do with the Content of this Repository!
-    value: ""
+    value: 
   validations:
     required: true
