@@ -8,7 +8,7 @@ body:
 - type: markdown
   attributes:
     value: |
-      This Issue can be read by everyone! Do not write any personal and or private Information here!
+      This Issue can be read by anyyone! Do not write any personal and or private Information here!
 - type: checkboxes
   id: author-has-read-and-agrees-to-comply-with-code-of-conduct
   attributes:
@@ -27,7 +27,7 @@ body:
 - type: textarea
   id: new-question
   attributes:
-    label: Ask away!
+    label: Write your Question in the below Text Input Field. Please stay on Topic!
     description: Ask whatever you want, as long as it has to do with the Content of this Repository!
     placeholder: Ask whatever you want, as long as it has to do with the Content of this Repository!
     value: 
