@@ -1,6 +1,6 @@
 name: Bug Report Form. Technical Problems only! For Questions, Feature Request and Translation use the specific Forms!
 description: Something does not work as expected or not at all. Bugs. Glitches. UI Issues. The App crashes, hangs or does not launch etc.
-title: "[Bug]: "
+title: '[Bug]: '
 labels: ['Type: Bug', 'Status: Not Confirmed']
 assignees:
   - MeerMusik
