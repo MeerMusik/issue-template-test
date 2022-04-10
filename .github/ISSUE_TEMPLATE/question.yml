@@ -1,5 +1,5 @@
 name: Question Form. Please read the FAQ and the Manual first. If you still have Questions after reading both, feel free to ask them by using this Form.
-description: As long as your Question has to do with the Content in this Repository, it is considered on Topic.
+description: As long as your Questions have to do with the Content of this Repository, they are considered on Topic.
 title: "[Question]: "
 labels: ['Type: Question']
 assignees:
@@ -8,21 +8,21 @@ body:
 - type: markdown
   attributes:
     value: |
-      This Issue can be read by anyyone! Do not write any personal and or private Information here!
+      This Issue can be read by anyone! Do not write any personal and or private Information here!
 - type: checkboxes
   id: author-has-read-and-agrees-to-comply-with-code-of-conduct
   attributes:
     label: Code of Conduct
     description: By submitting this Issue, I confirm that I have read the [Code of Conduct](../blob/main/CODE_OF_CONDUCT.md) and that I agree to comply with it.
     options:
-    - label: I confirm that I have read the Code of Conduct and I agree to comply with it.
+    - label: I confirm that I have read the Code of Conduct and I agree to comply with it
       required: true
 - type: checkboxes
   attributes:
     label: Is there already an Issue which answers your Question?
     description: Please look at the existing [Issues](../../../../issues/) to make sure your Question does not already exist!
     options:
-    - label: I have looked at the existing Issues. My Question does not exist or the Detail I would like to know about was not answered in an existing similar Question.
+    - label: I have looked at the existing Issues. My Question does not exist or the Detail I would like to know about was not answered in an existing similar Question
       required: true
 - type: textarea
   id: new-question
