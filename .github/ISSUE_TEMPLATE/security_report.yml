@@ -47,7 +47,7 @@ body:
     description: Please describe the type of the Vulnerability
     #placeholder:
     #value:
-    render: Shell
+    render: Text
   validations:
     required: true
 - type: checkboxes
@@ -80,7 +80,7 @@ body:
   attributes:
     label: If applicable - Does the Vulnerability only affect a specific Kernel Version or Windows Version? Or a specific Distribution?
     description: "Please list the affected Kernel or Windows Version[s] and or the Name of Linux Distribution Windows!"
-    render: Shell
+    render: Text
   validations:
     required: false
 - type: dropdown
@@ -98,7 +98,7 @@ body:
   attributes:
     label: Anything else you would like to add?
     description: If you have additional Infos you would like to add, you can do this here
-    render: Shell
+    render: Text
 - type: textarea
   id: additional_logs
   attributes:
