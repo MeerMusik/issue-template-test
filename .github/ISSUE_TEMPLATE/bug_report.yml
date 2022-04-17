@@ -57,6 +57,7 @@ body:
     description: Please describe the Bug as clear and concise as possible
     placeholder: Example - I opened an existing Document but the Editor is empty
     value: "Example: I opened an existing Document but the Editor is empty (Delete this Example Text!)"
+    render: Text
   validations:
     required: true
 - type: dropdown
@@ -76,11 +77,12 @@ body:
     - Windows 11
   validations:
     required: true
-- type: input
+- type: textarea
   id: name-bsd-linux-distribution-desktop-environment
   attributes:
     label: Name of the Linux Distribution and Desktop Environment
     description: "Examples: Ubuntu with Gnome. - Debian with KDE."
+    render: Text
   validations:
     required: false
 - type: dropdown
@@ -137,6 +139,7 @@ body:
   attributes:
     label: Anything you would like to add?
     description: If you have additional Infos you would like to add, you can do this here
+    render: Text
 - type: textarea
   id: additional_logs
   attributes:
