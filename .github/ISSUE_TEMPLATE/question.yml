@@ -1,26 +1,26 @@
-name: Question Form. Please read the FAQ and the Manual first. If you still have Questions after reading both, feel free to ask them by using this Form.
+name: Question Form. Please read the FAQ first. If you still have Questions after reading it, feel free to ask them by using this Form.
 description: As long as your Questions have to do with the Content of this Repository, they are considered on Topic.
-title: "[Question]: "
+title: '[Question]: '
 labels: ['Type: Question']
 assignees:
-  - MeerMusik
+  - "MeerMusik"
 body:
 - type: markdown
   attributes:
     value: |
-      This Issue can be read by anyone! Do not write any personal and or private Information here!
+      This Issue can be read by anyone! Do not write any private Information here!
 - type: checkboxes
   id: author-has-read-and-agrees-to-comply-with-code-of-conduct
   attributes:
     label: Code of Conduct
-    description: By submitting this Issue, I confirm that I have read the [Code of Conduct](../blob/main/CODE_OF_CONDUCT.md) and that I agree to comply with it.
+    description: By submitting this Issue, I confirm that I have read the [Code of Conduct](../blob/main/CODE_OF_CONDUCT.md) and that I agree to comply with the Rules.
     options:
     - label: I confirm that I have read the Code of Conduct and I agree to comply with it
       required: true
 - type: checkboxes
   attributes:
-    label: Is there already an Issue which answers your Question?
-    description: Please look at the existing [Issues](../../../../issues/) to make sure your Question does not already exist!
+    label: Is there already an Issue which answer your Question?
+    description: Please look at the [existing Issues](../../../../issues?q=label%3A"Type%3A+Question") to make sure your Question does not already exist!
     options:
     - label: I have looked at the existing Issues. My Question does not exist or the Detail I would like to know about was not answered in an existing similar Question
       required: true
@@ -30,6 +30,7 @@ body:
     label: Write your Question in the below Text Input Field. Please stay on Topic!
     description: Ask whatever you want, as long as it has to do with the Content of this Repository!
     placeholder: Ask whatever you want, as long as it has to do with the Content of this Repository!
-    value: 
+    #value:
+    render: Shell
   validations:
     required: true
