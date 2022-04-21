@@ -1,16 +1,23 @@
-# Do not allow creating Issues without a body text
+# Some Links that should help getting in Contact, answering Questions etc. to hopefully limit unnecessarily created Issues
+# Do not allow creating Issues without a body text = do not allow use of Default GitHub Issue Creator
+# Blank Issues are the Default GitHub Method by using a Markdown Template or basic Text Area. I do want the new Yaml way and also want People to answer specific Questions
 blank_issues_enabled: false
-# Some Links that should help getting in Contact, answering Questions etc. to hopefully limit unnecessary Issues
 contact_links:
+  - name: Code of Conduct
+    url: https://github.com/MeerMusik/PiratesLittleHelper/blob/main/CODE_OF_CONDUCT.md
+    about: The Code of Conduct. Just be a nice Person then I do not need to enforce these Rules. Thank you!
+  - name: Contribution Rules
+    url: https://github.com/MeerMusik/PiratesLittleHelper/blob/main/CONTRIBUTING.md
+    about: Important if you want to submit commits for Code or Documentation changes. Or create a Pull Request. Please Read BEFORE submitting anything!
+  - name: How-To Compile from Source - WIP!
+    url: https://github.com/MeerMusik/PiratesLittleHelper/blob/main/COMPILE.md
+    about: This Document gives you general Information on How to Compile from Source.
   - name: FAQ - English - Answers get added as needed
-    url: https://github.com/MeerMusik/issue-template-test/blob/main/Docs/FAQ_English.md
-    about: Should answer the most asked Questions. If you have still Questions after reading the FAQ, feel free to create a new Issue by using the Question Form.
-  - name: FAQ - German - Answers get added as needed
-    url: https://github.com/MeerMusik/issue-template-test/blob/main/Docs/FAQ_German.md
-    about: Should answer the most asked Questions. If you have still Questions after reading the FAQ, feel free to create a new Issue by using the Question Form.
-  - name: PLACEHOLDER - Manual - Coming later
-    url: https://www..com
-    about: The Manual will be added around or shortly after Version 1.0 has been published
-  - name: Twitter
+    url: https://github.com/MeerMusik/PiratesLittleHelper/blob/main/Docs/FAQ_English.md
+    about: Should answer the most asked Questions. If you have still Questions after reading the FAQ, feel free to create a new Issue and use the Question Form.
+  - name: FAQ - German - Wird aktualisiert wenn nötig
+    url: https://github.com/MeerMusik/PiratesLittleHelper/blob/main/Docs/FAQ_German.md
+    about: DE - Sollte die am häufigsten gestellten Fragen beantworten. Wenn Du nach dem Lesen der FAQ noch Fragen hast, kannst Du über das Frageformular deine Frage stellen.
+  - name: My Personal Twitter Account
     url: https://twitter.com/MeerMusik
     about: Ask me a short Question on Twitter. Replies take somewhere between 2 - 96 hours. Tweets are public and readable by everyone! If you need to send personal Data, send me a Direct Message = DM!

@@ -1,35 +1,36 @@
-name: Question - Please read the FAQ and the Manual first, which are listed below on this Page! If you still have Questions after reading both, feel free to ask them by using this Form.
-description: As long as your Questions have to do with the Content in this Repository, they are considered on Topic.
-title: "[Question]: "
+name: Question Form. Please read the FAQ first. If you still have Questions after reading it, feel free to ask them by using this Form.
+description: As long as your Questions have to do with the Content of this Repository, they are considered on Topic.
+title: '[Question]: '
 labels: ['Type: Question']
 assignees:
-  - MeerMusik
+  - "MeerMusik"
 body:
 - type: markdown
   attributes:
     value: |
-      Keep in mind, that this Issue will be public and can be read by anyone! Do not publish private Informations like your eMail Address here!
+      This Issue can be read by anyone! Do not write any private Information here!
+- type: checkboxes
+  id: author-has-read-and-agrees-to-comply-with-code-of-conduct
+  attributes:
+    label: Code of Conduct
+    description: By submitting this Issue, I confirm that I have read the [Code of Conduct](../blob/main/CODE_OF_CONDUCT.md) and that I agree to comply with the Rules.
+    options:
+    - label: I confirm that I have read the Code of Conduct and I agree to comply with it
+      required: true
 - type: checkboxes
   attributes:
-    label: Does an open Issue already exist for this Question?
-    description: Please search through the Issues to see if there is already an open Issue for your Question!
+    label: Is there already an Issue which answer your Question?
+    description: Please look at the [existing Issues](../../../../issues?q=label%3A"Type%3A+Question") to make sure your Question does not already exist!
     options:
-    - label: I have searched the existing Issues. There is no Issue for this specific Question
+    - label: I have looked at the existing Issues. My Question does not exist or the Detail I would like to know about was not answered in an existing similar Question
       required: true
 - type: textarea
   id: new-question
   attributes:
-    label: Ask away!
+    label: Write your Question in the below Text Input Field. Please stay on Topic!
     description: Ask whatever you want, as long as it has to do with the Content of this Repository!
     placeholder: Ask whatever you want, as long as it has to do with the Content of this Repository!
-    value: "Ask whatever you want, as long as it has to do with the Content of this Repository!"
+    #value:
+    render: Shell
   validations:
     required: true
-- type: checkboxes
-  id: code-of-conduct
-  attributes:
-    label: Code of Conduct
-    description: By submitting this issue, you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md)
-    options:
-    - label: I agree to follow the Code of Conduct of this Project in addition to the Guidelines and Rules of GitHub
-      required: true

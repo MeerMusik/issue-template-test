@@ -1,0 +1,107 @@
+name: Security Report Form. Use this Form to report a Security Issue in the Tool itself, a 3rd Party Dependency etc.
+description: Use this Form to report a Security Issue in the Tool itself, a 3rd Party Dependency etc.
+title: '[Bug] [Security]: '
+labels: ['Type: Bug', 'Type: Security', 'Status: Not Confirmed']
+assignees:
+  - "MeerMusik"
+body:
+- type: markdown
+  attributes:
+    value: |
+      Thank you for filling out the Security Report! If you are unsure about something, please mention it in the Box 'Anything else you would like to add?'.
+
+      Please read the [Code of Conduct](../blob/main/CODE_OF_CONDUCT.md). If you submit any Code or Documentation changes, a commit or Pull Request, please also read the [Contribution Rules](../blob/main/CONTRIBUTING.md). You have to comply with them.
+      
+      1. Please make sure you are running the latest Version of your Operating System, Linux Kernel etc. and PiratesLittleHelper!
+      2. Reports against not supported Versions of PiratesLittleHelper, Libraries or Platforms etc. will be closed and marked as invalid!
+      3. Please fill out the Form in english! Reports in other Languages will be ignored and closed after 30 Days without being translated into english! If you need a Free Translator, you can for example use
+      [Deepl.com - Website](https://www.deepl.com/translator) which is based in Germany. Or whichever Service you prefer
+      
+      4. Make sure to check the [existing Issues](../../../../issues?q=label%3A"Type%3A+Security)
+      5. If your Issue already exist, please upvote an Issue by adding your "Thumps Up" emoji to the Original Comment instead of writing "+1" or something similar
+      6. If the existing Issue is marked as "Need more Information" or something similar, please add the requested or required Information to the existing Issue by writing a Comment
+      
+      If you are unsure what to do, feel free to contact me first i.e. per eMail or Twitter.
+
+      Thank you!
+- type: checkboxes
+  id: author-has-read-and-agrees-to-comply-with-code-of-conduct
+  attributes:
+    label: Code of Conduct
+    description: By submitting this issue, I confirm that I have read the [Code of Conduct](../blob/main/CODE_OF_CONDUCT.md) and that I agree to comply with the Rules.
+    options:
+    - label: I confirm that I have read the Code of Conduct and I agree to comply with the Rules
+      required: true
+- type: checkboxes
+  id: author-has-checked-issue-list
+  attributes:
+    label: Does an Issue already exist for this Bug?
+    description: Please look at the [existing Issues](../../../../issues?q=label%3A"Type%3A+Security") if your Bug has already been reported!
+    options:
+    - label: I have looked at the existing Issues. There is no Issue for this specific Bug
+      required: true
+- type: textarea
+  id: type-of-the-vulnerability
+  attributes:
+    label: Describe the Vulnerability
+    description: Please describe the type of the Vulnerability
+    #placeholder:
+    #value:
+    render: Text
+  validations:
+    required: true
+- type: checkboxes
+  id: severity-of-the-vulnerability
+  attributes:
+    label: How severe is the Vulnerability?
+    description: Does the Vulnerability require local Access? Is it a Bug in another Dependency?
+    options:
+    - label: It is a Bug in Tool itself
+    - label: It is a Bug in a 3rd Party Dependency
+    - label: It requires local Access to the Machine
+    - label: It can be exploited whenever the Tool is connected to the Internet
+- type: dropdown
+  id: os-name
+  attributes:
+    label: Which Platforms are affected? Multiple Answers possible
+    multiple: true
+    options:
+    - Linux
+    - macOS 64-Bit ARM64 M1 Architecture
+    - macOS 64-Bit X86 Architecture
+    - Windows 7
+    - Windows 8.1
+    - Windows 10
+    - Windows 11
+  validations:
+    required: true
+- type: textarea
+  id: affected-kernel-distribution-or-windows-version
+  attributes:
+    label: If applicable - Does the Vulnerability only affect a specific Kernel Version or Windows Version? Or a specific Distribution?
+    description: "Please list the affected Kernel or Windows Version[s] and or the Name of Linux Distribution Windows!"
+    render: Text
+  validations:
+    required: false
+- type: dropdown
+  id: linux-wayland-x11
+  attributes:
+    label: Only for Linux - Wayland or X11?
+    description: Does the Vulnerability affect Wayland or X11? Or both? Multiple Answers possible
+    multiple: true
+    options:
+    - Wayland only
+    - X11 only
+    - Wayland and X11
+- type: textarea
+  id: additional_infos_from_issue_creator
+  attributes:
+    label: Anything else you would like to add?
+    description: If you have additional Infos you would like to add, you can do this here
+    render: Text
+- type: textarea
+  id: additional_logs
+  attributes:
+    label: Relevant Log Output
+    description: Please copy and paste any relevant Log Output if available. No need for backticks. It will be automatically formatted into code.
+    render: Shell

@@ -1,22 +1,54 @@
-name: Bug Report - Technical Problems only! - NOT FOR TRANSLATIONS! NOT FOR FEATURE REQUESTS!
-description: Bugs. Glitches. UI Issues. If something does not work as expected or not at all. The App crashes or does not launch. - To request a Feature or Option, please use the "Feature Request" Form!
+name: Bug Report Form. Technical Problems only! For Questions, Feature Request and Translation use the specific Forms!
+description: Something does not work as expected or not at all. Bugs. Glitches. UI Issues. The App crashes, hangs or does not launch etc.
 title: "[Bug]: "
 labels: ['Type: Bug', 'Status: Not Confirmed']
 assignees:
-  - MeerMusik
+  - "MeerMusik"
 body:
 - type: markdown
   attributes:
     value: |
-      Thank you filling out the Bug Report!
-      If you wish to request a new Feature or Option, please use the Feature Request Form!
-      For everything about missing or incomplete Translations, please use the Translation Form!
+      Thank you for filling out the Security Report! If you are unsure about something, please mention it in the Box 'Anything else you would like to add?'.
+
+      Please read the [Code of Conduct](../blob/main/CODE_OF_CONDUCT.md). If you submit any Code or Documentation changes, a commit or Pull Request, please also read the [Contribution Rules](../blob/main/CONTRIBUTING.md). You have to comply with them.
+      
+      1. Please make sure you are running the latest Version of your Operating System, Linux Kernel etc. and PiratesLittleHelper!
+      2. Reports against not supported Versions of PiratesLittleHelper, Libraries or Platforms etc. will be closed and marked as invalid!
+      3. Please fill out the Form in english! Reports in other Languages will be ignored and closed after 30 Days without being translated into english! If you need a Free Translator, you can for example use
+      [Deepl.com - Website](https://www.deepl.com/translator) which is based in Germany. Or whichever Service you prefer
+      
+      4. Make sure to check the [existing Issues](../../../../issues?q=label%3A"Type%3A+Bug)
+      5. If your Issue already exist, please upvote an Issue by adding your "Thumps Up" emoji to the Original Comment instead of writing "+1" or something similar
+      6. If the existing Issue is marked as "Need more Information" or something similar, please add the requested or required Information to the existing Issue by writing a Comment
+      
+      If you are unsure what to do, feel free to contact me first i.e. per eMail or Twitter.
+
+      Thank you!
 - type: checkboxes
+  id: author-has-read-and-agrees-to-comply-with-code-of-conduct
+  attributes:
+    label: Code of Conduct
+    description: By submitting this issue, I confirm that I have read the [Code of Conduct](../blob/main/CODE_OF_CONDUCT.md) and that I agree to comply with the Rules.
+    options:
+    - label: I confirm that I have read the Code of Conduct and I agree to comply with the Rules
+      required: true
+- type: checkboxes
+  id: author-has-read-and-agrees-to-comply-with-contribution-rules
+  attributes:
+    label: Contribution Rules
+    description: By submitting this issue, I confirm that I have read the [Contribution Rules](../blob/main/CONTRIBUTING.md) and that I agree to comply with them
+    options:
+    - label: I confirm that I have read the Contribution Rules and I agree to comply with them
+      required: true
+    - label: I am only reporting a Bug without submitting Code or Documentation Changes or creating a Pull Request
+      required: true
+- type: checkboxes
+  id: author-has-checked-issue-list
   attributes:
     label: Does an Issue already exist for this Bug?
-    description: Please search through the Issues to see if an Issue already exists for the Bug you have encountered!
+    description: Please look at the [existing Issues](../../../../issues?q=label%3A"Type%3A+Bug") if your Bug has already been reported!
     options:
-    - label: I have searched the existing Issues. There is no Issue for this specific Bug
+    - label: I have looked at the existing Issues. There is no Issue for this specific Bug
       required: true
 - type: textarea
   id: bug-description
@@ -24,40 +56,39 @@ body:
     label: Describe the Bug
     description: Please describe the Bug as clear and concise as possible
     placeholder: Example - I opened an existing Document but the Editor is empty
-    value: "Example: I opened an existing Document but the Editor is empty"
+    value: "Example: I opened an existing Document but the Editor is empty (Delete this Example Text!)"
+    render: Text
   validations:
     required: true
 - type: dropdown
   id: os-name
   attributes:
-    label: Which Operating System do you use? Multiple Answers possible
+    label: Under which Platform does the Bug occur? Multiple Answers possible
     multiple: true
     options:
-    - Arch Linux with GNOME Version 3
-    - Arch Linux with KDE Version 5
-    - FreeBSD with GNOME 3
-    - FreeBSD with KDE 5
-    - Linux other
-    - macOS 64-Bit
-    - Manjaro Linux with GNOME Version 3
-    - Manjaro Linux with KDE Version 5
+    - Linux with GNOME Version 3
+    - Linux with GNOME Version 4
+    - Linux with KDE Version 5
+    - macOS 64-Bit ARM M1 Architecture
+    - macOS 64-Bit X86 Architecture
     - Windows 7
     - Windows 8.1
     - Windows 10
-    - Other (no direct support by me and / or the used Framework!)
+    - Windows 11
   validations:
     required: true
-- type: input
+- type: textarea
   id: name-bsd-linux-distribution-desktop-environment
   attributes:
-    label: Name of the BSD or Linux Distribution and used Desktop Environment or the Name of the used OS if you selected "Other"
-    description: "If you selected 'Other' above, type the Name of the OS and / or Desktop Environment."
+    label: Name of the Linux Distribution and Desktop Environment
+    description: "Examples: Ubuntu with Gnome. - Debian with KDE."
+    render: Text
   validations:
     required: false
 - type: dropdown
   id: linux-wayland-x11
   attributes:
-    label: Only when using Linux - Wayland or X11?
+    label: Only for Linux - Wayland or X11?
     description: Does the Bug happen under Wayland or X11? Or both? Multiple Answers possible
     multiple: true
     options:
@@ -67,13 +98,14 @@ body:
 - type: dropdown
   id: os-bitness
   attributes:
-    label: Architecture Operating System
+    label: Architecture of your Platform
     description: Which Architecture is your Operating System? Multiple Answers possible
     multiple: true
     options:
-    - X86 (32-Bit)
-    - X86_64 (64-Bit)
-    - 64-Bit with 32-Bit Multilibs, Compatibility Layer or something similar
+    - ARM M1 64-Bit - macOS only
+    - X86 - 32-Bit - Not valid for macOS
+    - X86_64 - 64-Bit
+    - X86_64 with X86 Multilibs, Compatibility Layer etc.
   validations:
     required: true
 - type: dropdown
@@ -83,8 +115,9 @@ body:
     description: Which Architecture of the Tool do you use? Multiple Answers possible
     multiple: true
     options:
-    - X86 (32-Bit)
-    - X86_64 (64-Bit)
+    - ARM M1 64-Bit - macOS only
+    - X86 - 32-Bit - Not valid for macOS
+    - X86_64 - 64-Bit
   validations:
     required: true
 - type: dropdown
@@ -98,7 +131,7 @@ body:
     - The Tool sometimes crashes to Desktop (CTD)
     - The Tool does NOT crash to Desktop and is still usable
     - The Tool does NOT crash to Desktop but becomes unresponsive and must be terminated through the Task Manager
-    - Answer does not apply - The Tool does not launch (FIXME - IFELSE NEED GH API)
+    - Answer does not apply - The Tool does not launch (Internal FIXME - IFELSE NEED GH API)
   validations:
     required: true
 - type: textarea
@@ -106,17 +139,10 @@ body:
   attributes:
     label: Anything you would like to add?
     description: If you have additional Infos you would like to add, you can do this here
+    render: Text
 - type: textarea
   id: additional_logs
   attributes:
     label: Relevant Log Output
     description: Please copy and paste any relevant Log Output if available. This will be automatically formatted into code, so no need for backticks.
-    render: shell
-- type: checkboxes
-  id: code-of-conduct
-  attributes:
-    label: Code of Conduct
-    description: By submitting this issue, you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md)
-    options:
-    - label: I agree to follow the Code of Conduct of this Project in addition to the Guidelines and Rules of GitHub
-      required: true
+    render: Shell
